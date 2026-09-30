@@ -1,0 +1,16 @@
+{
+  "name": "l10n-style-guide-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sanity dev",
+    "deploy-schema": "sanity schema deploy",
+    "import-seed": "sanity dataset import ../content/seed.ndjson production --replace"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sanity": "^6.16.0",
+    "styled-components": "^6.5.3"
+  }
+}

@@ -1,0 +1,1471 @@
+{
+ "model": "gemini-3.1-flash-lite",
+ "items": 24,
+ "no_kb": {
+  "score": {
+   "bugsCaught": "11/12",
+   "fixesLeftAlone": "8/12",
+   "pairsFullyRight": "7/12",
+   "pairedScore": 0.583,
+   "failed": 0
+  },
+  "runs": [
+   {
+    "item": {
+     "caseId": "c02",
+     "half": "shipped",
+     "product": "transcription SaaS",
+     "context": "navigation menu label",
+     "englishSource": "Tools",
+     "text": "Utensileria",
+     "errorType": "wrong_word_sense"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il termine 'Utensileria' si riferisce a strumenti fisici, mentre per un software si usa 'Strumenti'.",
+      "corrected": "Strumenti",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c02",
+     "half": "fixed",
+     "product": "transcription SaaS",
+     "context": "navigation menu label",
+     "englishSource": "Tools",
+     "text": "Strumenti",
+     "errorType": "wrong_word_sense"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Il termine Strumenti è la traduzione standard e corretta per le voci di menu software.",
+      "corrected": "Strumenti",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c07",
+     "half": "shipped",
+     "product": "meeting-notes AI",
+     "context": "end of feature list",
+     "englishSource": null,
+     "text": "Ottieni informazioni utili e pratiche da tutte le registrazioni and More",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "La frase contiene una parte in inglese non tradotta e la struttura è innaturale.",
+      "corrected": "Ottieni informazioni utili e pratiche da tutte le tue registrazioni.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c07",
+     "half": "fixed",
+     "product": "meeting-notes AI",
+     "context": "end of feature list",
+     "englishSource": null,
+     "text": "Ottieni informazioni utili e pratiche da tutte le registrazioni e altro ancora",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "La traduzione suona come un calco dall'inglese; in italiano è più naturale usare 'approfondimenti' o 'spunti' invece di 'informazioni utili e pratiche'.",
+      "corrected": "Ottieni spunti pratici da tutte le registrazioni e molto altro.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c09",
+     "half": "shipped",
+     "product": "proofreading AI",
+     "context": "section header",
+     "englishSource": null,
+     "text": "USER REVIEW",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The placeholder text is missing, making the header incomplete and non-functional.",
+      "corrected": "Revisione testi con intelligenza artificiale",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c09",
+     "half": "fixed",
+     "product": "proofreading AI",
+     "context": "section header",
+     "englishSource": null,
+     "text": "RECENSIONI DEGLI UTENTI",
+     "errorType": "untranslated"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Il termine è corretto, naturale e comunemente utilizzato nelle interfacce software italiane.",
+      "corrected": "RECENSIONI DEGLI UTENTI",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c13",
+     "half": "shipped",
+     "product": "social media tool",
+     "context": "hero metric",
+     "englishSource": null,
+     "text": "1-click batch autopilot",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il termine 'autopilot' è un calco dall'inglese non naturale in italiano; è preferibile utilizzare 'pilota automatico'.",
+      "corrected": "Pilota automatico in batch con un clic",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c13",
+     "half": "fixed",
+     "product": "social media tool",
+     "context": "hero metric",
+     "englishSource": null,
+     "text": "Automazione batch con un clic",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il termine 'batch' è un tecnicismo inglese non necessario in questo contesto e 'con un clic' suona meno naturale di 'in un clic'.",
+      "corrected": "Automazione in un clic",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c14",
+     "half": "shipped",
+     "product": "recruiting SaaS",
+     "context": "social-proof heading",
+     "englishSource": "Trusted by 100,000+ Businesses",
+     "text": "Fidato da oltre 100.000 imprese",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il participio passato 'fidato' non si usa in questo contesto; è preferibile utilizzare una costruzione con 'scelto da' o 'usato da'.",
+      "corrected": "Scelto da oltre 100.000 aziende",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c14",
+     "half": "fixed",
+     "product": "recruiting SaaS",
+     "context": "social-proof heading",
+     "englishSource": "Trusted by 100,000+ Businesses",
+     "text": "Scelto da oltre 100.000 aziende",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and follows standard Italian formatting for numbers and business terminology.",
+      "corrected": "Scelto da oltre 100.000 aziende",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c15",
+     "half": "shipped",
+     "product": "recruiting SaaS",
+     "context": "feature description",
+     "englishSource": "[BRAND] automatically shares your job post to over 100+ job boards",
+     "text": "[BRAND] condivide automaticamente il tuo annuncio su oltre 100+ siti di annunci",
+     "errorType": "number_format"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "L'espressione 'oltre 100+' è ridondante perché 'oltre' e il simbolo '+' indicano entrambi un valore superiore.",
+      "corrected": "[BRAND] condivide automaticamente il tuo annuncio su oltre 100 siti di lavoro",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c15",
+     "half": "fixed",
+     "product": "recruiting SaaS",
+     "context": "feature description",
+     "englishSource": "[BRAND] automatically shares your job post to over 100+ job boards",
+     "text": "[BRAND] pubblica automaticamente il tuo annuncio su oltre 100 siti di lavoro",
+     "errorType": "number_format"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "L'espressione 'oltre 100+' è una ridondanza pleonastica poiché 'oltre' e il simbolo '+' indicano entrambi un valore superiore.",
+      "corrected": "[BRAND] pubblica automaticamente il tuo annuncio su oltre 100 siti di lavoro",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c18",
+     "half": "shipped",
+     "product": "real-estate photo AI",
+     "context": "feature card description",
+     "englishSource": "AI Day to Dusk editing turns ordinary daylight real estate photos into stunning, professionally enhanced twilight shots automatically.",
+     "text": "AI Dal giorno al tramonto modifica le foto immobiliari diurni ordinarie in straordinarie immagini crepuscolari professionalmente migliorate in modo automatico.",
+     "errorType": "ungrammatical"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "La traduzione di 'Day to Dusk' è letterale e poco naturale, inoltre la sintassi della frase risulta macchinosa.",
+      "corrected": "La funzione AI Day to Dusk trasforma automaticamente le normali foto diurne di immobili in straordinari scatti crepuscolari di qualità professionale.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c18",
+     "half": "fixed",
+     "product": "real-estate photo AI",
+     "context": "feature card description",
+     "englishSource": "AI Day to Dusk editing turns ordinary daylight real estate photos into stunning, professionally enhanced twilight shots automatically.",
+     "text": "La funzione \"Dal giorno al crepuscolo\" trasforma automaticamente normali foto immobiliari scattate di giorno in suggestive immagini al crepuscolo dall'aspetto professionale.",
+     "errorType": "ungrammatical"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and maintains the professional tone required for real estate software.",
+      "corrected": "La funzione \"Dal giorno al crepuscolo\" trasforma automaticamente normali foto immobiliari scattate di giorno in suggestive immagini al crepuscolo dall'aspetto professionale.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c20",
+     "half": "shipped",
+     "product": "employee-monitoring SaaS",
+     "context": "compliance badge",
+     "englishSource": "HIPAA & GDPR safe.",
+     "text": "HIPAA & GDPR sicuro.",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "L'aggettivo 'sicuro' non è appropriato in questo contesto; è preferibile utilizzare 'conforme' per indicare il rispetto delle normative.",
+      "corrected": "Conforme a HIPAA e GDPR.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c20",
+     "half": "fixed",
+     "product": "employee-monitoring SaaS",
+     "context": "compliance badge",
+     "englishSource": "HIPAA & GDPR safe.",
+     "text": "Conforme a HIPAA e GDPR.",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "La traduzione è corretta, naturale e rispetta la terminologia tecnica standard in ambito compliance.",
+      "corrected": "Conforme a HIPAA e GDPR.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c24",
+     "half": "shipped",
+     "product": "e-learning video AI",
+     "context": "benefit sentence",
+     "englishSource": null,
+     "text": "Offri video didattici online più interattive ed efficaci per migliore esperienze di apprendimento",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il testo presenta errori di concordanza di genere e numero e una forma verbale errata.",
+      "corrected": "Offri video didattici online più interattivi ed efficaci per migliori esperienze di apprendimento.",
+      "rules": [
+       "grammar/agreement",
+       "syntax/adjective-noun-agreement"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c24",
+     "half": "fixed",
+     "product": "e-learning video AI",
+     "context": "benefit sentence",
+     "englishSource": null,
+     "text": "Offri video didattici online più interattivi ed efficaci per migliorare l'esperienza di apprendimento",
+     "errorType": "agreement"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The sentence is grammatically correct, natural, and effectively conveys the intended meaning in an e-learning context.",
+      "corrected": "Offri video didattici online più interattivi ed efficaci per migliorare l'esperienza di apprendimento",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c25",
+     "half": "shipped",
+     "product": "medical transcription",
+     "context": "navigation link",
+     "englishSource": null,
+     "text": "Transcrizione",
+     "errorType": "misspelling"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Il termine è corretto e comunemente utilizzato nel settore medico per indicare il processo di trascrizione.",
+      "corrected": "Transcrizione",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c25",
+     "half": "fixed",
+     "product": "medical transcription",
+     "context": "navigation link",
+     "englishSource": null,
+     "text": "Trascrizione",
+     "errorType": "misspelling"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Il termine è corretto e appropriato per il contesto di un software di trascrizione medica.",
+      "corrected": "Trascrizione",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c27",
+     "half": "shipped",
+     "product": "PDF tools",
+     "context": "feature bullet",
+     "englishSource": null,
+     "text": "Larger file per task (up to 500 MB)",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "La traduzione letterale 'Larger file per task' non è naturale in italiano; è preferibile indicare la dimensione massima consentita per file.",
+      "corrected": "File più grandi per attività (fino a 500 MB)",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c27",
+     "half": "fixed",
+     "product": "PDF tools",
+     "context": "feature bullet",
+     "englishSource": null,
+     "text": "File più grandi per attività (fino a 500 MB)",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "La preposizione 'per' è impropria in questo contesto; si intende la dimensione massima consentita per ogni singolo file.",
+      "corrected": "File più grandi (fino a 500 MB per file)",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c29",
+     "half": "shipped",
+     "product": "backup software",
+     "context": "statistic",
+     "englishSource": null,
+     "text": "1 milioni server protetti",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The noun 'server' is masculine and requires the correct plural agreement for the numeral.",
+      "corrected": "1 milione di server protetti",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c29",
+     "half": "fixed",
+     "product": "backup software",
+     "context": "statistic",
+     "englishSource": null,
+     "text": "1 milione di server protetti",
+     "errorType": "agreement"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The phrasing is idiomatic and correctly formatted for Italian marketing copy.",
+      "corrected": "1 milione di server protetti",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   }
+  ]
+ },
+ "kb": {
+  "score": {
+   "bugsCaught": "11/12",
+   "fixesLeftAlone": "5/12",
+   "pairsFullyRight": "4/12",
+   "pairedScore": 0.333,
+   "failed": 0
+  },
+  "runs": [
+   {
+    "item": {
+     "caseId": "c02",
+     "half": "shipped",
+     "product": "transcription SaaS",
+     "context": "navigation menu label",
+     "englishSource": "Tools",
+     "text": "Utensileria",
+     "errorType": "wrong_word_sense"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The term 'Utensileria' refers to physical hardware tools, whereas 'Strumenti' is the correct standard term for software utilities.",
+      "corrected": "Strumenti",
+      "rules": [
+       "ui_term_glossary/term_translations",
+       "microsoft_style_reference/voice_and_tone"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "microsoft_style_reference/software_localization"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c02",
+     "half": "fixed",
+     "product": "transcription SaaS",
+     "context": "navigation menu label",
+     "englishSource": "Tools",
+     "text": "Strumenti",
+     "errorType": "wrong_word_sense"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate and follows the standard Italian UI conventions for navigation labels.",
+      "corrected": "Strumenti",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "grammar/capitalization"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c07",
+     "half": "shipped",
+     "product": "meeting-notes AI",
+     "context": "end of feature list",
+     "englishSource": null,
+     "text": "Ottieni informazioni utili e pratiche da tutte le registrazioni and More",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text contains untranslated English and uses the English abbreviation 'AI' instead of the preferred Italian 'IA'.",
+      "corrected": "Ottieni informazioni utili e pratiche da tutte le registrazioni e altro ancora",
+      "rules": [
+       "rule.ai-abbreviation",
+       "untranslated_english"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "untranslated_english"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c07",
+     "half": "fixed",
+     "product": "meeting-notes AI",
+     "context": "end of feature list",
+     "englishSource": null,
+     "text": "Ottieni informazioni utili e pratiche da tutte le registrazioni e altro ancora",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text is a stiff, literal translation that fails to adopt the natural and conversational tone required by the style guide.",
+      "corrected": "Estrai informazioni utili e pratiche dalle tue registrazioni e non solo.",
+      "rules": [
+       "microsoft_style_reference/voice_and_tone",
+       "calques_and_false_friends"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "abbreviations_and_terminology",
+         "calques_and_false_friends",
+         "microsoft_style_reference/voice_and_tone"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c09",
+     "half": "shipped",
+     "product": "proofreading AI",
+     "context": "section header",
+     "englishSource": null,
+     "text": "USER REVIEW",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The user did not provide the text to be reviewed.",
+      "corrected": "",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c09",
+     "half": "fixed",
+     "product": "proofreading AI",
+     "context": "section header",
+     "englishSource": null,
+     "text": "RECENSIONI DEGLI UTENTI",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses English-style Title Case, which violates the Italian UI requirement for sentence case.",
+      "corrected": "Recensioni degli utenti",
+      "rules": [
+       "grammar/capitalization"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "grammar/capitalization",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c13",
+     "half": "shipped",
+     "product": "social media tool",
+     "context": "hero metric",
+     "englishSource": null,
+     "text": "1-click batch autopilot",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text is an ungrammatical English noun stack that must be translated and restructured into natural Italian.",
+      "corrected": "Autopilota batch in 1 clic",
+      "rules": [
+       "Flagging Untranslated English",
+       "Word Order & Sentence Structure"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "untranslated_english",
+         "grammar/word_order",
+         "microsoft_style_reference/voice_and_tone"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c13",
+     "half": "fixed",
+     "product": "social media tool",
+     "context": "hero metric",
+     "englishSource": null,
+     "text": "Automazione batch con un clic",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The phrase is a calque of an English noun stack and lacks a natural Italian structure.",
+      "corrected": "Automatizza le operazioni in serie con un clic",
+      "rules": [
+       "Word Order & Sentence Structure"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "grammar/word_order",
+         "grammar/capitalization"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c14",
+     "half": "shipped",
+     "product": "recruiting SaaS",
+     "context": "social-proof heading",
+     "englishSource": "Trusted by 100,000+ Businesses",
+     "text": "Fidato da oltre 100.000 imprese",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The phrase 'Fidato da' is a machine-translation calque; the preferred Italian term for social proof is 'Scelto da'.",
+      "corrected": "Scelto da oltre 100.000 imprese",
+      "rules": [
+       "calques_and_false_friends/Trusted by calque (major)",
+       "ui_term_glossary/term_translations/Social Proof & Attribution"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "calques_and_false_friends",
+         "ui_term_glossary/term_translations"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c14",
+     "half": "fixed",
+     "product": "recruiting SaaS",
+     "context": "social-proof heading",
+     "englishSource": "Trusted by 100,000+ Businesses",
+     "text": "Scelto da oltre 100.000 aziende",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the preferred 'Scelto da' phrasing and follows Italian number formatting conventions.",
+      "corrected": "Scelto da oltre 100.000 aziende",
+      "rules": [
+       "Calques, False Friends & Idiom Errors/# \"Trusted by\" calque (major)",
+       "Number & Quantity Formatting/Thousands separator and decimal comma",
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)",
+       "UI Term Translations/Social Proof & Attribution"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "calques_and_false_friends",
+         "number_formatting",
+         "ui_term_glossary/term_translations"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c15",
+     "half": "shipped",
+     "product": "recruiting SaaS",
+     "context": "feature description",
+     "englishSource": "[BRAND] automatically shares your job post to over 100+ job boards",
+     "text": "[BRAND] condivide automaticamente il tuo annuncio su oltre 100+ siti di annunci",
+     "errorType": "number_format"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses the redundant and non-standard '100+' format instead of placing 'oltre' before the number.",
+      "corrected": "[BRAND] condivide automaticamente il tuo annuncio su oltre 100 siti di annunci",
+      "rules": [
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "number_formatting"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c15",
+     "half": "fixed",
+     "product": "recruiting SaaS",
+     "context": "feature description",
+     "englishSource": "[BRAND] automatically shares your job post to over 100+ job boards",
+     "text": "[BRAND] pubblica automaticamente il tuo annuncio su oltre 100 siti di lavoro",
+     "errorType": "number_format"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, correctly handles the quantity expression, and follows the established style guide for feature descriptions.",
+      "corrected": "[BRAND] pubblica automaticamente il tuo annuncio su oltre 100 siti di lavoro",
+      "rules": [
+       "Number & Quantity Formatting",
+       "Microsoft voice and tone for Italian"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "number_formatting",
+         "microsoft_style_reference/voice_and_tone"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c18",
+     "half": "shipped",
+     "product": "real-estate photo AI",
+     "context": "feature card description",
+     "englishSource": "AI Day to Dusk editing turns ordinary daylight real estate photos into stunning, professionally enhanced twilight shots automatically.",
+     "text": "AI Dal giorno al tramonto modifica le foto immobiliari diurni ordinarie in straordinarie immagini crepuscolari professionalmente migliorate in modo automatico.",
+     "errorType": "ungrammatical"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text contains severe grammatical agreement errors, uses the incorrect 'AI' abbreviation instead of 'IA', and relies on an ungrammatical, calqued word order.",
+      "corrected": "L'IA trasforma automaticamente le normali foto diurne degli immobili in straordinarie immagini crepuscolari, migliorandole in modo professionale.",
+      "rules": [
+       "rule.ai-abbreviation",
+       "grammar/agreement",
+       "grammar/word_order",
+       "microsoft_style_reference/voice_and_tone"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "calques_and_false_friends",
+         "grammar/agreement",
+         "grammar/word_order",
+         "microsoft_style_reference/voice_and_tone"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c18",
+     "half": "fixed",
+     "product": "real-estate photo AI",
+     "context": "feature card description",
+     "englishSource": "AI Day to Dusk editing turns ordinary daylight real estate photos into stunning, professionally enhanced twilight shots automatically.",
+     "text": "La funzione \"Dal giorno al crepuscolo\" trasforma automaticamente normali foto immobiliari scattate di giorno in suggestive immagini al crepuscolo dall'aspetto professionale.",
+     "errorType": "ungrammatical"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses the English abbreviation 'AI' instead of the preferred Italian 'IA' as specified in the style guide.",
+      "corrected": "La funzione \"Dal giorno al crepuscolo\" basata sull'IA trasforma automaticamente normali foto immobiliari scattate di giorno in suggestive immagini al crepuscolo dall'aspetto professionale.",
+      "rules": [
+       "rule.ai-abbreviation"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c20",
+     "half": "shipped",
+     "product": "employee-monitoring SaaS",
+     "context": "compliance badge",
+     "englishSource": "HIPAA & GDPR safe.",
+     "text": "HIPAA & GDPR sicuro.",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The adjective fails to agree in number with the plural subject, and the phrasing is a literal calque that ignores standard Italian compliance terminology.",
+      "corrected": "Conforme a HIPAA e GDPR",
+      "rules": [
+       "grammar/agreement",
+       "microsoft_style_reference/grammar_standards",
+       "microsoft_style_reference/voice_and_tone"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "grammar/agreement",
+         "microsoft_style_reference/grammar_standards",
+         "microsoft_style_reference/voice_and_tone"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c20",
+     "half": "fixed",
+     "product": "employee-monitoring SaaS",
+     "context": "compliance badge",
+     "englishSource": "HIPAA & GDPR safe.",
+     "text": "Conforme a HIPAA e GDPR.",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, natural, and follows standard Italian conventions for compliance terminology.",
+      "corrected": "Conforme a HIPAA e GDPR.",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "microsoft_style_reference/grammar_standards",
+         "untranslated_english"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c24",
+     "half": "shipped",
+     "product": "e-learning video AI",
+     "context": "benefit sentence",
+     "englishSource": null,
+     "text": "Offri video didattici online più interattive ed efficaci per migliore esperienze di apprendimento",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The sentence contains multiple gender and number agreement errors, and the structure is an unnatural calque of English.",
+      "corrected": "Offri video didattici online più interattivi ed efficaci per migliorare l'esperienza di apprendimento con l'IA",
+      "rules": [
+       "Gender, Number & Agreement Rules",
+       "Word Order & Sentence Structure",
+       "Italian grammar and orthography standards",
+       "AI & Tech Abbreviations"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "grammar/agreement",
+         "grammar/word_order",
+         "microsoft_style_reference/grammar_standards",
+         "abbreviations_and_terminology"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c24",
+     "half": "fixed",
+     "product": "e-learning video AI",
+     "context": "benefit sentence",
+     "englishSource": null,
+     "text": "Offri video didattici online più interattivi ed efficaci per migliorare l'esperienza di apprendimento",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses the English abbreviation 'AI' instead of the preferred Italian 'IA' as specified in the style guide.",
+      "corrected": "Offri video didattici online basati su IA più interattivi ed efficaci per migliorare l'esperienza di apprendimento",
+      "rules": [
+       "rule.ai-abbreviation"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "abbreviations_and_terminology",
+         "ui_term_glossary/term_translations"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c25",
+     "half": "shipped",
+     "product": "medical transcription",
+     "context": "navigation link",
+     "englishSource": null,
+     "text": "Transcrizione",
+     "errorType": "misspelling"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The term is correctly translated and follows the sentence case capitalization rule for UI elements.",
+      "corrected": "Transcrizione",
+      "rules": [
+       "Capitalization Rules for Italian UI"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "grammar/capitalization"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c25",
+     "half": "fixed",
+     "product": "medical transcription",
+     "context": "navigation link",
+     "englishSource": null,
+     "text": "Trascrizione",
+     "errorType": "misspelling"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The term is correctly translated and follows the sentence case rule for UI elements.",
+      "corrected": "Trascrizione",
+      "rules": [
+       "Capitalization Rules for Italian UI"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "grammar/capitalization"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c27",
+     "half": "shipped",
+     "product": "PDF tools",
+     "context": "feature bullet",
+     "englishSource": null,
+     "text": "Larger file per task (up to 500 MB)",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The source text is a calqued noun stack that lacks a verb and natural Italian syntax, violating the style guide's requirement for clear, verb-first UI copy.",
+      "corrected": "Gestisci file più grandi (fino a 500 MB)",
+      "rules": [
+       "Word Order & Sentence Structure",
+       "Italian grammar and orthography standards/Sentence fragments",
+       "Microsoft voice and tone for Italian/Focusing on the user action"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "grammar/word_order",
+         "microsoft_style_reference/grammar_standards",
+         "microsoft_style_reference/voice_and_tone"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c27",
+     "half": "fixed",
+     "product": "PDF tools",
+     "context": "feature bullet",
+     "englishSource": null,
+     "text": "File più grandi per attività (fino a 500 MB)",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The phrase 'File più grandi per attività' is a literal, unnatural calque that does not clearly convey the intended meaning of a file size limit per operation.",
+      "corrected": "File più grandi per operazione (fino a 500 MB)",
+      "rules": [
+       "grammar/word_order",
+       "microsoft_style_reference/voice_and_tone"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "grammar/word_order",
+         "microsoft_style_reference/voice_and_tone"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c29",
+     "half": "shipped",
+     "product": "backup software",
+     "context": "statistic",
+     "englishSource": null,
+     "text": "1 milioni server protetti",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The number 1 requires a singular noun, and the construction requires the preposition 'di' to connect the quantity to the noun.",
+      "corrected": "1 milione di server protetti",
+      "rules": [
+       "Gender, Number & Agreement Rules",
+       "Number & Quantity Formatting"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "grammar/agreement",
+         "number_formatting"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c29",
+     "half": "fixed",
+     "product": "backup software",
+     "context": "statistic",
+     "englishSource": null,
+     "text": "1 milione di server protetti",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text lacks the necessary 'oltre' prefix if the intent is to convey a threshold, and the phrasing should be consistent with Italian quantity conventions.",
+      "corrected": "Oltre 1 milione di server protetti",
+      "rules": [
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "number_formatting"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

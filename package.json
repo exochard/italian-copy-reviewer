@@ -1,0 +1,25 @@
+{
+  "name": "sanity-l10n-agent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "review": "node --env-file-if-exists=.env --experimental-strip-types src/cli.ts",
+    "eval": "node --env-file-if-exists=.env --experimental-strip-types src/eval.ts",
+    "test": "node --experimental-strip-types --test src/*.test.ts",
+    "serve": "node --env-file-if-exists=.env --experimental-strip-types src/server.ts",
+    "typecheck": "tsc --noEmit --allowImportingTsExtensions --module nodenext --moduleResolution nodenext --target es2023 --strict --skipLibCheck --types node src/*.ts",
+    "seed": "python3 content/build_seed.py"
+  },
+  "dependencies": {
+    "@ai-sdk/amazon-bedrock": "^5.0.97",
+    "@ai-sdk/google": "^4.0.82",
+    "@ai-sdk/mcp": "^2.0.60",
+    "@aws-sdk/credential-providers": "^3.1141.0",
+    "ai": "^7.0.118",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}

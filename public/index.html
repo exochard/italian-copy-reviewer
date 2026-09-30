@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italian copy reviewer</title>
+<style>
+  :root { --ink: #1d1b18; --muted: #6b645b; --line: #ddd6cc; --bg: #faf7f2; --ok: #1f6f43; --err: #a33a1e; --accent: #24477a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.5 system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  p.lead { color: var(--muted); margin: 0 0 24px; }
+  label { display: block; font-weight: 600; margin: 16px 0 6px; }
+  input, textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; font: inherit; background: #fff; }
+  textarea { min-height: 88px; resize: vertical; }
+  .row { display: flex; gap: 12px; align-items: center; margin-top: 16px; flex-wrap: wrap; }
+  button { padding: 10px 18px; border: 0; border-radius: 8px; background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: progress; }
+  button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #9bb7e0; outline-offset: 2px; }
+  .card { margin-top: 24px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+  .verdict { font-weight: 700; font-size: 1.1rem; }
+  .verdict.ok { color: var(--ok); } .verdict.error { color: var(--err); }
+  .fix { font-size: 1.1rem; padding: 8px 12px; background: #f1f6f0; border-radius: 8px; margin: 10px 0; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  code { background: #f1ede6; padding: 1px 6px; border-radius: 4px; }
+  @media (prefers-reduced-motion: no-preference) { .card { animation: in .2s ease-out; } @keyframes in { from { opacity: 0; transform: translateY(4px); } } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Italian copy reviewer</h1>
+  <p class="lead">Paste a string from an Italian product page. The agent reads the team's style guide from a Sanity Knowledge Base and cites the rules it used.</p>
+  <form id="f">
+    <label for="text">Italian text</label>
+    <textarea id="text" required>Fidato da oltre 2.000 negozi</textarea>
+    <label for="en">English source (optional)</label>
+    <input id="en" value="Trusted by 2,000+ shops">
+    <label for="context">Where it appears</label>
+    <input id="context" value="homepage social proof">
+    <div class="row">
+      <button id="go" type="submit">Review</button>
+      <label class="muted" style="margin:0;font-weight:400"><input id="nokb" type="checkbox" style="width:auto"> Without the Knowledge Base</label>
+    </div>
+  </form>
+  <div id="out" aria-live="polite"></div>
+</main>
+<script>
+  const f = document.getElementById("f"), out = document.getElementById("out"), go = document.getElementById("go");
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  f.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    go.disabled = true;
+    out.innerHTML = `<div class="card muted">${document.getElementById("nokb").checked ? "Reviewing…" : "Reading the Knowledge Base…"}</div>`;
+    try {
+      const res = await fetch("/api/review", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({
+        text: document.getElementById("text").value, englishSource: document.getElementById("en").value || null,
+        context: document.getElementById("context").value, useKnowledgeBase: !document.getElementById("nokb").checked }) });
+      if (!res.ok) throw new Error(await res.text());
+      const { review: r, toolCalls } = await res.json();
+      const reads = toolCalls.filter((c) => c.tool === "knowledge_base_read").flatMap((c) => c.input.paths || []);
+      out.innerHTML = `<div class="card">
+        <div class="verdict ${r.verdict}">${r.verdict === "ok" ? "Ready to ship" : "Needs a fix"}</div>
+        <p>${esc(r.reason)}</p>
+        ${r.verdict === "error" ? `<div class="fix">${esc(r.corrected)}</div>` : ""}
+        <p class="muted">Rules cited: ${r.rules.length ? r.rules.map((p) => `<code>${esc(p)}</code>`).join(" ") : "none"}</p>
+        <p class="muted">Knowledge Base entries read: ${reads.length ? reads.map((p) => `<code>${esc(p)}</code>`).join(" ") : "none"}</p>
+      </div>`;
+    } catch (err) {
+      out.innerHTML = `<div class="card"><span class="verdict error">Error</span><p>${esc(err.message)}</p></div>`;
+    } finally { go.disabled = false; }
+  });
+</script>
+</body>
+</html>

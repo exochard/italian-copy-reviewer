@@ -1,0 +1,9 @@
+node_modules/
+studio/node_modules/
+studio/dist/
+.sanity/
+studio/.sanity/
+.env
+results/*
+!results/eval-*.json
+*.log

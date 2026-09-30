@@ -1,0 +1,153 @@
+[
+ {
+  "english": "Trusted by",
+  "preferred": "Scelto da",
+  "avoid": [
+   "Fidato da"
+  ],
+  "note": "Social proof."
+ },
+ {
+  "english": "Powered by",
+  "preferred": "Basato su / Con tecnologia",
+  "avoid": [
+   "Alimentato da"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Top picks",
+  "preferred": "I più scelti",
+  "avoid": [
+   "I migliori gusti"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Features",
+  "preferred": "Funzionalità",
+  "avoid": [
+   "Caratteristiche"
+  ],
+  "note": "\"Caratteristiche\" fits physical products, not software."
+ },
+ {
+  "english": "Explore",
+  "preferred": "Scopri",
+  "avoid": [
+   "Esplora"
+  ],
+  "note": "\"Esplora\" is acceptable for maps and catalogues."
+ },
+ {
+  "english": "Learn more",
+  "preferred": "Scopri di più",
+  "avoid": [
+   "Impara di più"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Get started",
+  "preferred": "Inizia",
+  "avoid": [
+   "Ottieni iniziato"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Sign up",
+  "preferred": "Registrati",
+  "avoid": [
+   "Firma su"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Log in",
+  "preferred": "Accedi",
+  "avoid": [
+   "Loggati"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Upload",
+  "preferred": "Carica",
+  "avoid": [
+   "Upload"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Pricing",
+  "preferred": "Prezzi",
+  "avoid": [
+   "Prezzatura"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Free trial",
+  "preferred": "Prova gratuita",
+  "avoid": [
+   "Prova libera"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Sale",
+  "preferred": "Offerte / Saldi",
+  "avoid": [
+   "Sale"
+  ],
+  "note": "\"Sale\" is also an Italian word (salt; rooms)."
+ },
+ {
+  "english": "Native speakers",
+  "preferred": "madrelingua",
+  "avoid": [
+   "altoparlanti nativi"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Plagiarism checker",
+  "preferred": "Rilevatore di plagio",
+  "avoid": [
+   "Plagiarism checker"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Paraphraser",
+  "preferred": "Parafrasatore",
+  "avoid": [
+   "Parafrasiatore"
+  ],
+  "note": ""
+ },
+ {
+  "english": "Scheduling software",
+  "preferred": "software di prenotazione / agenda online",
+  "avoid": [
+   "programmatore di appuntamenti"
+  ],
+  "note": "\"Programmatore\" is a person who writes code."
+ },
+ {
+  "english": "Dashboard",
+  "preferred": "Dashboard / Pannello di controllo",
+  "avoid": [],
+  "note": "Both are common; stay consistent."
+ },
+ {
+  "english": "Billions",
+  "preferred": "miliardi",
+  "avoid": [
+   "Mld",
+   "bilioni"
+  ],
+  "note": "\"Bilione\" is a false friend (10^12)."
+ }
+]

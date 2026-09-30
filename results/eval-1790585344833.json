@@ -1,0 +1,2163 @@
+{
+ "model": "gemini-3.1-flash-lite",
+ "items": 34,
+ "no_kb": {
+  "score": {
+   "bugsCaught": "16/17",
+   "fixesLeftAlone": "13/17",
+   "pairsFullyRight": "12/17",
+   "pairedScore": 0.706,
+   "failed": 0
+  },
+  "runs": [
+   {
+    "item": {
+     "caseId": "c01",
+     "half": "shipped",
+     "product": "dubbing/transcription SaaS",
+     "context": "homepage statistic",
+     "englishSource": null,
+     "text": "5 Mld+ Altoparlanti nativi raggiunti",
+     "errorType": "wrong_word_sense"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il termine 'altoparlanti' è una traduzione letterale errata di 'speakers' nel contesto di persone che parlano.",
+      "evidence": "Altoparlanti",
+      "corrected": "5 Mld+ di parlanti nativi raggiunti",
+      "rules": [
+       "false-friends",
+       "terminology-accuracy"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c01",
+     "half": "fixed",
+     "product": "dubbing/transcription SaaS",
+     "context": "homepage statistic",
+     "englishSource": null,
+     "text": "Oltre 5 miliardi di madrelingua raggiunti",
+     "errorType": "wrong_word_sense"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il termine 'madrelingua' si riferisce alle persone, non alla lingua parlata, e il numero è semanticamente errato poiché la popolazione mondiale è inferiore.",
+      "evidence": "5 miliardi di madrelingua",
+      "corrected": "Oltre 5 miliardi di persone raggiunte",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c03",
+     "half": "shipped",
+     "product": "AI-detection tool",
+     "context": "tool name",
+     "englishSource": null,
+     "text": "Rilevatore ID False",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il termine 'ID' è un calco dall'inglese che in questo contesto risulta ambiguo o errato, poiché si riferisce al rilevamento di contenuti generati dall'IA (AI) e non a un identificativo personale.",
+      "evidence": "ID",
+      "corrected": "Rilevatore IA False",
+      "rules": [
+       "terminologia-tecnica",
+       "calchi-linguistici"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c03",
+     "half": "fixed",
+     "product": "AI-detection tool",
+     "context": "tool name",
+     "englishSource": null,
+     "text": "Rilevatore di documenti d'identità falsi",
+     "errorType": "agreement"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The phrase is grammatically correct and accurately describes the function of the tool.",
+      "evidence": "",
+      "corrected": "Rilevatore di documenti d'identità falsi",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c04",
+     "half": "shipped",
+     "product": "AI-detection tool",
+     "context": "navigation badge",
+     "englishSource": "SALE",
+     "text": "SALE",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The English term 'SALE' is not used in Italian; the correct term for a promotional discount is 'SALDI' or 'OFFERTA'.",
+      "evidence": "SALE",
+      "corrected": "SALDI",
+      "rules": [
+       "localization/terminology/marketing"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c04",
+     "half": "fixed",
+     "product": "AI-detection tool",
+     "context": "navigation badge",
+     "englishSource": "SALE",
+     "text": "Offerte",
+     "errorType": "untranslated"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Il termine 'Offerte' è la traduzione standard e corretta per 'SALE' in un contesto di e-commerce o software.",
+      "evidence": "",
+      "corrected": "Offerte",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c05",
+     "half": "shipped",
+     "product": "AI-detection tool",
+     "context": "tool name",
+     "englishSource": null,
+     "text": "Parafrasiatore",
+     "errorType": "misspelling"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il termine 'Parafrasiatore' non è un sostantivo standard in italiano; si preferisce 'Parafrasatore'.",
+      "evidence": "Parafrasiatore",
+      "corrected": "Parafrasatore",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c05",
+     "half": "fixed",
+     "product": "AI-detection tool",
+     "context": "tool name",
+     "englishSource": null,
+     "text": "Parafrasatore",
+     "errorType": "misspelling"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Il termine è corretto e ampiamente utilizzato nel contesto dei software di scrittura e intelligenza artificiale.",
+      "evidence": "",
+      "corrected": "Parafrasatore",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c06",
+     "half": "shipped",
+     "product": "writing assistant",
+     "context": "section heading",
+     "englishSource": "Top Picks",
+     "text": "I migliori gusti",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "La traduzione di 'picks' come 'gusti' è errata in questo contesto, poiché si riferisce a preferenze o selezioni e non al senso del gusto.",
+      "evidence": "I migliori gusti",
+      "corrected": "Le migliori scelte",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c06",
+     "half": "fixed",
+     "product": "writing assistant",
+     "context": "section heading",
+     "englishSource": "Top Picks",
+     "text": "I più scelti",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "L'espressione 'I più scelti' suona innaturale in italiano; è preferibile utilizzare 'Le scelte migliori' o 'I preferiti'.",
+      "evidence": "I più scelti",
+      "corrected": "Le scelte migliori",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c08",
+     "half": "shipped",
+     "product": "proofreading AI",
+     "context": "section header",
+     "englishSource": null,
+     "text": "AI PLAGIARISM CHECKER",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The term 'AI' is an English acronym and should be translated or integrated into a natural Italian phrase, and 'PLAGIARISM CHECKER' is a calque that should be rendered as 'rilevatore di plagio'.",
+      "evidence": "AI PLAGIARISM CHECKER",
+      "corrected": "Rilevatore di plagio basato su IA",
+      "rules": [
+       "localization/terminology/acronyms",
+       "localization/style/calques"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c08",
+     "half": "fixed",
+     "product": "proofreading AI",
+     "context": "section header",
+     "englishSource": null,
+     "text": "RILEVATORE DI PLAGIO CON IA",
+     "errorType": "untranslated"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The term is grammatically correct and commonly used in the Italian software industry.",
+      "evidence": "",
+      "corrected": "RILEVATORE DI PLAGIO CON IA",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c10",
+     "half": "shipped",
+     "product": "image upscaler",
+     "context": "upload call to action",
+     "englishSource": null,
+     "text": "Lascia uníimmagine",
+     "errorType": "encoding"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "L'uso dell'apostrofo al posto dell'accento è un errore di battitura.",
+      "evidence": "uníimmagine",
+      "corrected": "Lascia un'immagine",
+      "rules": [
+       "orthography"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c10",
+     "half": "fixed",
+     "product": "image upscaler",
+     "context": "upload call to action",
+     "englishSource": null,
+     "text": "Lascia un'immagine",
+     "errorType": "encoding"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "L'espressione 'Lascia un'immagine' è una traduzione letterale errata dell'inglese 'Drop an image', che in italiano si rende correttamente con 'Trascina'.",
+      "evidence": "Lascia un'immagine",
+      "corrected": "Trascina un'immagine",
+      "rules": [
+       "localization/ui/drag-and-drop"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c11",
+     "half": "shipped",
+     "product": "social media tool",
+     "context": "hero eyebrow",
+     "englishSource": null,
+     "text": "Powered by AI · Multi-platform",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The term 'Powered by' is an anglicism that should be translated to maintain professional Italian copy.",
+      "evidence": "Powered by AI",
+      "corrected": "Basato sull'IA · Multi-piattaforma",
+      "rules": [
+       "localization/avoid-anglicisms",
+       "localization/terminology-consistency"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c11",
+     "half": "fixed",
+     "product": "social media tool",
+     "context": "hero eyebrow",
+     "englishSource": null,
+     "text": "Basato sull'AI · Multipiattaforma",
+     "errorType": "untranslated"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text is grammatically correct and uses standard terminology for software marketing in Italian.",
+      "evidence": "",
+      "corrected": "Basato sull'AI · Multipiattaforma",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c12",
+     "half": "shipped",
+     "product": "social media tool",
+     "context": "hero metric",
+     "englishSource": null,
+     "text": "6+ piattaforme",
+     "errorType": "number_format"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "In Italian, the plus sign should follow the number and there should be a space between the number and the noun.",
+      "evidence": "6+ piattaforme",
+      "corrected": "6+ piattaforme",
+      "rules": [
+       "typography/spacing/numbers"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c12",
+     "half": "fixed",
+     "product": "social media tool",
+     "context": "hero metric",
+     "englishSource": null,
+     "text": "Oltre 6 piattaforme",
+     "errorType": "number_format"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "In Italian, the preposition 'oltre' is typically followed by a number without the need for the preposition 'a' when indicating quantity.",
+      "evidence": "Oltre 6 piattaforme",
+      "corrected": "Più di 6 piattaforme",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c16",
+     "half": "shipped",
+     "product": "recruiting SaaS",
+     "context": "comparison heading",
+     "englishSource": "Tired of overpriced HR software or bloated ATS tools?",
+     "text": "Stufo di software HR troppo costosi o di strumenti ATS gonfi di funzionalità?",
+     "errorType": "unidiomatic"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The term 'gonfi di funzionalità' is a literal translation of 'bloated' that sounds unnatural in Italian; 'macchinosi' or 'complessi' would be more idiomatic.",
+      "evidence": "gonfi di funzionalità",
+      "corrected": "Stufo di software HR troppo costosi o di strumenti ATS macchinosi?",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c16",
+     "half": "fixed",
+     "product": "recruiting SaaS",
+     "context": "comparison heading",
+     "englishSource": "Tired of overpriced HR software or bloated ATS tools?",
+     "text": "Stufo di software HR troppo costosi o di piattaforme ATS complesse e sovraccariche?",
+     "errorType": "unidiomatic"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurately conveys the meaning of the source text in a professional context.",
+      "evidence": "",
+      "corrected": "Stufo di software HR troppo costosi o di piattaforme ATS complesse e sovraccariche?",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c17",
+     "half": "shipped",
+     "product": "real-estate photo AI",
+     "context": "feature card title",
+     "englishSource": "Real Estate Photo Enhancement with AI",
+     "text": "Migliorati immobiliare foto con AI",
+     "errorType": "ungrammatical"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The word order is incorrect and the adjective does not agree with the noun.",
+      "evidence": "Migliorati immobiliare foto",
+      "corrected": "Miglioramento foto immobiliari con AI",
+      "rules": [
+       "grammar/syntax/adjective-placement"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c17",
+     "half": "fixed",
+     "product": "real-estate photo AI",
+     "context": "feature card title",
+     "englishSource": "Real Estate Photo Enhancement with AI",
+     "text": "Migliora le foto degli immobili con l'IA",
+     "errorType": "ungrammatical"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and correctly uses the standard Italian acronym for AI.",
+      "evidence": "",
+      "corrected": "Migliora le foto degli immobili con l'IA",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c19",
+     "half": "shipped",
+     "product": "real-estate photo AI",
+     "context": "trust statement",
+     "englishSource": "Trusted by thousands of satisfied customers to bring their vision to life with AI-powered solutions.",
+     "text": "Fidato da migliaia di clienti soddisfatti per dar vita alla loro visione con soluzioni potenziate dall'AI.",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The passive construction 'Fidato da' is an anglicism and is not idiomatic in Italian; it should be rendered with an active structure or a different verb.",
+      "evidence": "Fidato da migliaia di clienti soddisfatti",
+      "corrected": "Migliaia di clienti soddisfatti si affidano a noi per dar vita alla loro visione con soluzioni basate sull'AI.",
+      "rules": [
+       "grammar/passive-voice-calques",
+       "style/idiomatic-expression"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c19",
+     "half": "fixed",
+     "product": "real-estate photo AI",
+     "context": "trust statement",
+     "englishSource": "Trusted by thousands of satisfied customers to bring their vision to life with AI-powered solutions.",
+     "text": "Scelto da migliaia di clienti soddisfatti per dare vita alle loro idee con soluzioni basate sull'IA.",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and maintains the professional tone of the original English text.",
+      "evidence": "",
+      "corrected": "Scelto da migliaia di clienti soddisfatti per dare vita alle loro idee con soluzioni basate sull'IA.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c21",
+     "half": "shipped",
+     "product": "employee-monitoring SaaS",
+     "context": "capacity line",
+     "englishSource": "1 to 15,000+ computers",
+     "text": "Da 1 a 15.000+ computer",
+     "errorType": "number_format"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the Italian decimal separator for thousands and maintains the appropriate preposition for a range.",
+      "evidence": "",
+      "corrected": "Da 1 a 15.000+ computer",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c21",
+     "half": "fixed",
+     "product": "employee-monitoring SaaS",
+     "context": "capacity line",
+     "englishSource": "1 to 15,000+ computers",
+     "text": "Da 1 a oltre 15.000 computer",
+     "errorType": "number_format"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, uses correct Italian number formatting, and maintains the intended meaning.",
+      "evidence": "",
+      "corrected": "Da 1 a oltre 15.000 computer",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c22",
+     "half": "shipped",
+     "product": "employee-monitoring SaaS",
+     "context": "social proof",
+     "englishSource": "Trusted by 9,500+ global brands and organizations",
+     "text": "Fidato da oltre 9,500 marchi e organizzazioni globali",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il participio passato 'Fidato' non si usa in questo contesto e il formato numerico italiano richiede il punto per le migliaia o lo spazio, non la virgola.",
+      "evidence": "Fidato da oltre 9,500",
+      "corrected": "Scelto da oltre 9.500 marchi e organizzazioni globali",
+      "rules": [
+       "grammar/passive-voice-usage",
+       "formatting/number-localization"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c22",
+     "half": "fixed",
+     "product": "employee-monitoring SaaS",
+     "context": "social proof",
+     "englishSource": "Trusted by 9,500+ global brands and organizations",
+     "text": "Scelto da oltre 9.500 marchi e organizzazioni in tutto il mondo",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, natural, and correctly follows Italian formatting conventions for numbers.",
+      "evidence": "",
+      "corrected": "Scelto da oltre 9.500 marchi e organizzazioni in tutto il mondo",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c23",
+     "half": "shipped",
+     "product": "scheduling SaaS",
+     "context": "call to action",
+     "englishSource": null,
+     "text": "Explore all features",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The English phrase 'Explore all features' is not translated into Italian.",
+      "evidence": "Explore all features",
+      "corrected": "Esplora tutte le funzionalità",
+      "rules": [
+       "localization/translation/no-english-leftovers"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c23",
+     "half": "fixed",
+     "product": "scheduling SaaS",
+     "context": "call to action",
+     "englishSource": null,
+     "text": "Scopri tutte le funzionalità",
+     "errorType": "untranslated"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The phrase is idiomatic, grammatically correct, and standard for a call-to-action in Italian software localization.",
+      "evidence": "",
+      "corrected": "Scopri tutte le funzionalità",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c26",
+     "half": "shipped",
+     "product": "medical transcription",
+     "context": "closing call to action",
+     "englishSource": null,
+     "text": "Pronto per Iniziare?",
+     "errorType": "capitalization"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "In Italian, the second word of a title or heading should not be capitalized unless it is a proper noun.",
+      "evidence": "Pronto per Iniziare?",
+      "corrected": "Pronto per iniziare?",
+      "rules": [
+       "capitalization-rules-italian"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c26",
+     "half": "fixed",
+     "product": "medical transcription",
+     "context": "closing call to action",
+     "englishSource": null,
+     "text": "Pronto per iniziare?",
+     "errorType": "capitalization"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The phrase is idiomatic and correctly used in a professional context.",
+      "evidence": "",
+      "corrected": "Pronto per iniziare?",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c28",
+     "half": "shipped",
+     "product": "backup software",
+     "context": "section heading",
+     "englishSource": null,
+     "text": "Perché le imprese scegli [BRAND]",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il verbo 'scegli' non concorda con il soggetto plurale 'le imprese'.",
+      "evidence": "scegli",
+      "corrected": "Perché le imprese scelgono [BRAND]",
+      "rules": [
+       "grammatica/concordanza-soggetto-verbo"
+      ]
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "c28",
+     "half": "fixed",
+     "product": "backup software",
+     "context": "section heading",
+     "englishSource": null,
+     "text": "Perché le imprese scelgono [BRAND]",
+     "errorType": "agreement"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The phrasing is natural and grammatically correct for a marketing heading in Italian.",
+      "evidence": "",
+      "corrected": "Perché le imprese scelgono [BRAND]",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   }
+  ]
+ },
+ "kb": {
+  "score": {
+   "bugsCaught": "16/17",
+   "fixesLeftAlone": "13/17",
+   "pairsFullyRight": "12/17",
+   "pairedScore": 0.706,
+   "failed": 0
+  },
+  "runs": [
+   {
+    "item": {
+     "caseId": "c01",
+     "half": "shipped",
+     "product": "dubbing/transcription SaaS",
+     "context": "homepage statistic",
+     "englishSource": null,
+     "text": "5 Mld+ Altoparlanti nativi raggiunti",
+     "errorType": "wrong_word_sense"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses an incorrect quantity format, an discouraged abbreviation, and improper Title Case capitalization.",
+      "evidence": "5 Mld+ Altoparlanti",
+      "corrected": "Oltre 5 miliardi di altoparlanti nativi raggiunti",
+      "rules": [
+       "Number & Quantity Formatting",
+       "Capitalization Rules for Italian UI"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "number_formatting",
+         "grammar/capitalization"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c01",
+     "half": "fixed",
+     "product": "dubbing/transcription SaaS",
+     "context": "homepage statistic",
+     "englishSource": null,
+     "text": "Oltre 5 miliardi di madrelingua raggiunti",
+     "errorType": "wrong_word_sense"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text correctly follows the style guide for quantity expressions and large number formatting.",
+      "evidence": "",
+      "corrected": "Oltre 5 miliardi di madrelingua raggiunti",
+      "rules": [
+       "Calques, False Friends & Idiom Errors",
+       "Number & Quantity Formatting"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "number_formatting"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c03",
+     "half": "shipped",
+     "product": "AI-detection tool",
+     "context": "tool name",
+     "englishSource": null,
+     "text": "Rilevatore ID False",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The abbreviation 'ID' is incorrect and does not follow the style guide's requirement to use 'IA' for artificial intelligence.",
+      "evidence": "ID",
+      "corrected": "Rilevatore di IA",
+      "rules": [
+       "rule.ai-abbreviation"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c03",
+     "half": "fixed",
+     "product": "AI-detection tool",
+     "context": "tool name",
+     "englishSource": null,
+     "text": "Rilevatore di documenti d'identità falsi",
+     "errorType": "agreement"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text follows Italian sentence case rules and uses appropriate terminology.",
+      "evidence": "",
+      "corrected": "Rilevatore di documenti d'identità falsi",
+      "rules": [
+       "Sentence case, not Title Case"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "grammar/capitalization"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c04",
+     "half": "shipped",
+     "product": "AI-detection tool",
+     "context": "navigation badge",
+     "englishSource": "SALE",
+     "text": "SALE",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The word 'SALE' is a false cognate in Italian and must be translated to 'Offerte' or 'Saldi' in a UI context.",
+      "evidence": "SALE",
+      "corrected": "OFFERTE",
+      "rules": [
+       "calques_and_false_friends",
+       "untranslated_english"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "untranslated_english"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c04",
+     "half": "fixed",
+     "product": "AI-detection tool",
+     "context": "navigation badge",
+     "englishSource": "SALE",
+     "text": "Offerte",
+     "errorType": "untranslated"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The term 'Offerte' is the correct and standard translation for 'Sale' in a UI navigation context.",
+      "evidence": "",
+      "corrected": "Offerte",
+      "rules": [
+       "term.sale"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "calques_and_false_friends"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c05",
+     "half": "shipped",
+     "product": "AI-detection tool",
+     "context": "tool name",
+     "englishSource": null,
+     "text": "Parafrasiatore",
+     "errorType": "misspelling"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The term used is an incorrect derivation; the standard Italian form is parafrasatore.",
+      "evidence": "Parafrasiatore",
+      "corrected": "Parafrasatore",
+      "rules": [
+       "ui_term_glossary/naming_consistency",
+       "ui_term_glossary/term_translations"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/naming_consistency",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c05",
+     "half": "fixed",
+     "product": "AI-detection tool",
+     "context": "tool name",
+     "englishSource": null,
+     "text": "Parafrasatore",
+     "errorType": "misspelling"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The term is spelled correctly according to the provided glossary.",
+      "evidence": "",
+      "corrected": "Parafrasatore",
+      "rules": [
+       "ui_term_glossary/term_translations",
+       "ui_term_glossary/naming_consistency"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "ui_term_glossary/naming_consistency"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c06",
+     "half": "shipped",
+     "product": "writing assistant",
+     "context": "section heading",
+     "englishSource": "Top Picks",
+     "text": "I migliori gusti",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "La traduzione corretta per la sezione 'Top Picks' è 'I più scelti', mentre 'I migliori gusti' è un calco errato.",
+      "evidence": "I migliori gusti",
+      "corrected": "I più scelti",
+      "rules": [
+       "ui_term_glossary/term_translations"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c06",
+     "half": "fixed",
+     "product": "writing assistant",
+     "context": "section heading",
+     "englishSource": "Top Picks",
+     "text": "I più scelti",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation matches the preferred term specified in the UI style guide.",
+      "evidence": "",
+      "corrected": "I più scelti",
+      "rules": [
+       "ui_term_translations/navigation_&_section_labels"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c08",
+     "half": "shipped",
+     "product": "proofreading AI",
+     "context": "section header",
+     "englishSource": null,
+     "text": "AI PLAGIARISM CHECKER",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses the English abbreviation 'AI' instead of 'IA', fails to translate the term 'plagiarism checker', and incorrectly applies English-style Title Case.",
+      "evidence": "AI PLAGIARISM CHECKER",
+      "corrected": "Rilevatore di plagio IA",
+      "rules": [
+       "rule.ai-abbreviation",
+       "grammar.capitalization",
+       "ui_term_glossary.term_translations"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "abbreviations_and_terminology",
+         "grammar/capitalization",
+         "ui_term_glossary/term_translations"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c08",
+     "half": "fixed",
+     "product": "proofreading AI",
+     "context": "section header",
+     "englishSource": null,
+     "text": "RILEVATORE DI PLAGIO CON IA",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses all caps instead of sentence case and is not formatted as a standard UI header.",
+      "evidence": "RILEVATORE DI PLAGIO CON IA",
+      "corrected": "Rilevatore di plagio con IA",
+      "rules": [
+       "rule.ai-abbreviation",
+       "Capitalization Rules for Italian UI"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "grammar/capitalization",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c10",
+     "half": "shipped",
+     "product": "image upscaler",
+     "context": "upload call to action",
+     "englishSource": null,
+     "text": "Lascia uníimmagine",
+     "errorType": "encoding"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text contains a critical character-encoding failure where the apostrophe has been mangled.",
+      "evidence": "uníimmagine",
+      "corrected": "Lascia un'immagine",
+      "rules": [
+       "encoding_and_special_characters/rendering_rules"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "encoding_and_special_characters/rendering_rules"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c10",
+     "half": "fixed",
+     "product": "image upscaler",
+     "context": "upload call to action",
+     "englishSource": null,
+     "text": "Lascia un'immagine",
+     "errorType": "encoding"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The phrase is a literal, nonsensical calque of the English 'drop' (as in drag-and-drop), whereas 'Carica' is the standard UI term for uploading.",
+      "evidence": "Lascia un'immagine",
+      "corrected": "Carica un'immagine",
+      "rules": [
+       "ui_term_glossary/term_translations",
+       "calques_and_false_friends/idiom_calques"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "calques_and_false_friends"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c11",
+     "half": "shipped",
+     "product": "social media tool",
+     "context": "hero eyebrow",
+     "englishSource": null,
+     "text": "Powered by AI · Multi-platform",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text contains untranslated English phrases and uses the English abbreviation 'AI' instead of the preferred Italian 'IA'.",
+      "evidence": "Powered by AI · Multi-platform",
+      "corrected": "Basato sull'IA · Multipiattaforma",
+      "rules": [
+       "rule.ai-abbreviation",
+       "untranslated_english"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "untranslated_english"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c11",
+     "half": "fixed",
+     "product": "social media tool",
+     "context": "hero eyebrow",
+     "englishSource": null,
+     "text": "Basato sull'AI · Multipiattaforma",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses the English abbreviation 'AI' instead of the preferred Italian form 'IA'.",
+      "evidence": "AI",
+      "corrected": "Basato sull'IA · Multipiattaforma",
+      "rules": [
+       "rule.ai-abbreviation"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "abbreviations_and_terminology",
+         "ui_term_glossary/term_translations"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c12",
+     "half": "shipped",
+     "product": "social media tool",
+     "context": "hero metric",
+     "englishSource": null,
+     "text": "6+ piattaforme",
+     "errorType": "number_format"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "L'uso del segno '+' dopo il numero non è conforme allo stile italiano, che richiede l'uso di 'Oltre' o 'Più di' prima del numero.",
+      "evidence": "6+ piattaforme",
+      "corrected": "Oltre 6 piattaforme",
+      "rules": [
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "number_formatting",
+         "microsoft_style_reference/grammar_standards"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c12",
+     "half": "fixed",
+     "product": "social media tool",
+     "context": "hero metric",
+     "englishSource": null,
+     "text": "Oltre 6 piattaforme",
+     "errorType": "number_format"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text correctly uses the 'oltre' prefix for quantities instead of the '+' sign, following the style guide.",
+      "evidence": "",
+      "corrected": "Oltre 6 piattaforme",
+      "rules": [
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "number_formatting"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c16",
+     "half": "shipped",
+     "product": "recruiting SaaS",
+     "context": "comparison heading",
+     "englishSource": "Tired of overpriced HR software or bloated ATS tools?",
+     "text": "Stufo di software HR troppo costosi o di strumenti ATS gonfi di funzionalità?",
+     "errorType": "unidiomatic"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The phrase 'gonfi di funzionalità' is a literal calque of 'bloated' and should be replaced with 'sovraccarichi'.",
+      "evidence": "gonfi di funzionalità",
+      "corrected": "Stufo di software HR troppo costosi o di strumenti ATS sovraccarichi?",
+      "rules": [
+       "calques_and_false_friends"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "microsoft_style_reference/voice_and_tone"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c16",
+     "half": "fixed",
+     "product": "recruiting SaaS",
+     "context": "comparison heading",
+     "englishSource": "Tired of overpriced HR software or bloated ATS tools?",
+     "text": "Stufo di software HR troppo costosi o di piattaforme ATS complesse e sovraccariche?",
+     "errorType": "unidiomatic"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the recommended native equivalent for 'bloated' and follows standard Italian grammar and capitalization rules.",
+      "evidence": "",
+      "corrected": "Stufo di software HR troppo costosi o di piattaforme ATS complesse e sovraccariche?",
+      "rules": [
+       "calques_and_false_friends",
+       "microsoft_style_reference/grammar_standards"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "calques_and_false_friends",
+         "microsoft_style_reference/voice_and_tone",
+         "microsoft_style_reference/grammar_standards"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c17",
+     "half": "shipped",
+     "product": "real-estate photo AI",
+     "context": "feature card title",
+     "englishSource": "Real Estate Photo Enhancement with AI",
+     "text": "Migliorati immobiliare foto con AI",
+     "errorType": "ungrammatical"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text is a literal calque of an English noun stack, contains a grammatical agreement error, and uses the non-preferred abbreviation for artificial intelligence.",
+      "evidence": "Migliorati immobiliare foto con AI",
+      "corrected": "Migliora le foto degli immobili con l'IA",
+      "rules": [
+       "rule.ai-abbreviation",
+       "grammar/agreement",
+       "grammar/word_order"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "grammar/agreement",
+         "grammar/word_order"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c17",
+     "half": "fixed",
+     "product": "real-estate photo AI",
+     "context": "feature card title",
+     "englishSource": "Real Estate Photo Enhancement with AI",
+     "text": "Migliora le foto degli immobili con l'IA",
+     "errorType": "ungrammatical"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text correctly uses the 'IA' abbreviation and follows Italian sentence-case conventions.",
+      "evidence": "",
+      "corrected": "Migliora le foto degli immobili con l'IA",
+      "rules": [
+       "rule.ai-abbreviation",
+       "Capitalization Rules for Italian UI"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "grammar/capitalization"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c19",
+     "half": "shipped",
+     "product": "real-estate photo AI",
+     "context": "trust statement",
+     "englishSource": "Trusted by thousands of satisfied customers to bring their vision to life with AI-powered solutions.",
+     "text": "Fidato da migliaia di clienti soddisfatti per dar vita alla loro visione con soluzioni potenziate dall'AI.",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Unsupported flag dropped: The text uses a prohibited calque for 'Trusted by' and the English abbreviation 'AI' instead of the preferred 'IA'.",
+      "evidence": "Fidato da, AI",
+      "corrected": "Scelto da migliaia di clienti soddisfatti per dar vita alla loro visione con soluzioni potenziate dall'IA.",
+      "rules": [
+       "rule.ai-abbreviation",
+       "calques_and_false_friends",
+       "ui_term_glossary/term_translations"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "abbreviations_and_terminology",
+         "calques_and_false_friends",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c19",
+     "half": "fixed",
+     "product": "real-estate photo AI",
+     "context": "trust statement",
+     "englishSource": "Trusted by thousands of satisfied customers to bring their vision to life with AI-powered solutions.",
+     "text": "Scelto da migliaia di clienti soddisfatti per dare vita alle loro idee con soluzioni basate sull'IA.",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text is accurate, follows the preferred terminology for social proof, and uses the correct Italian abbreviation for AI.",
+      "evidence": "",
+      "corrected": "Scelto da migliaia di clienti soddisfatti per dare vita alle loro idee con soluzioni basate sull'IA.",
+      "rules": [
+       "Calques, False Friends & Idiom Errors/\"Trusted by\" calque (major)",
+       "AI & Tech Abbreviations/IA vs. AI",
+       "UI Term Translations/Social Proof & Attribution"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "abbreviations_and_terminology",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c21",
+     "half": "shipped",
+     "product": "employee-monitoring SaaS",
+     "context": "capacity line",
+     "englishSource": "1 to 15,000+ computers",
+     "text": "Da 1 a 15.000+ computer",
+     "errorType": "number_format"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The plus sign suffix is not standard Italian style and should be replaced with 'oltre' before the number.",
+      "evidence": "15.000+",
+      "corrected": "Da 1 a oltre 15.000 computer",
+      "rules": [
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "number_formatting"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c21",
+     "half": "fixed",
+     "product": "employee-monitoring SaaS",
+     "context": "capacity line",
+     "englishSource": "1 to 15,000+ computers",
+     "text": "Da 1 a oltre 15.000 computer",
+     "errorType": "number_format"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text correctly uses the dot as a thousands separator and replaces the plus sign with the word 'oltre' placed before the number, following the style guide.",
+      "evidence": "",
+      "corrected": "Da 1 a oltre 15.000 computer",
+      "rules": [
+       "Number & Quantity Formatting/Thousands separator and decimal comma",
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "number_formatting"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c22",
+     "half": "shipped",
+     "product": "employee-monitoring SaaS",
+     "context": "social proof",
+     "englishSource": "Trusted by 9,500+ global brands and organizations",
+     "text": "Fidato da oltre 9,500 marchi e organizzazioni globali",
+     "errorType": "calque"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses a literal calque for 'Trusted by', an incorrect English-style thousands separator, and an improper suffix for quantity.",
+      "evidence": "Fidato da oltre 9,500",
+      "corrected": "Scelto da oltre 9.500 marchi e organizzazioni globali",
+      "rules": [
+       "Calques, False Friends & Idiom Errors/Trusted by calque (major)",
+       "Number & Quantity Formatting/Thousands separator and decimal comma",
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)",
+       "UI Term Translations/Social Proof & Attribution"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "number_formatting",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c22",
+     "half": "fixed",
+     "product": "employee-monitoring SaaS",
+     "context": "social proof",
+     "englishSource": "Trusted by 9,500+ global brands and organizations",
+     "text": "Scelto da oltre 9.500 marchi e organizzazioni in tutto il mondo",
+     "errorType": "calque"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text correctly uses 'Scelto da' and the appropriate Italian number formatting with a dot separator.",
+      "evidence": "",
+      "corrected": "Scelto da oltre 9.500 marchi e organizzazioni in tutto il mondo",
+      "rules": [
+       "Calques, False Friends & Idiom Errors/Trusted by calque (major)",
+       "Number & Quantity Formatting/Thousands separator and decimal comma",
+       "Number & Quantity Formatting/Expressing quantities above a threshold (\"+\" sign)",
+       "UI Term Translations/Social Proof & Attribution"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends",
+         "number_formatting",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c23",
+     "half": "shipped",
+     "product": "scheduling SaaS",
+     "context": "call to action",
+     "englishSource": null,
+     "text": "Explore all features",
+     "errorType": "untranslated"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The term 'Esplora' is discouraged for software features, and the text uses English-style Title Case instead of the required sentence case.",
+      "evidence": "Explore all features",
+      "corrected": "Scopri tutte le funzionalità",
+      "rules": [
+       "UI Term Translations/Buttons & CTAs",
+       "Capitalization Rules for Italian UI/Rule"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "grammar/capitalization"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c23",
+     "half": "fixed",
+     "product": "scheduling SaaS",
+     "context": "call to action",
+     "englishSource": null,
+     "text": "Scopri tutte le funzionalità",
+     "errorType": "untranslated"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text follows the sentence case rule and uses the preferred terminology for software features.",
+      "evidence": "",
+      "corrected": "Scopri tutte le funzionalità",
+      "rules": [
+       "Capitalization Rules for Italian UI",
+       "UI Term Translations"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "grammar/capitalization",
+         "ui_term_glossary/term_translations"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c26",
+     "half": "shipped",
+     "product": "medical transcription",
+     "context": "closing call to action",
+     "englishSource": null,
+     "text": "Pronto per Iniziare?",
+     "errorType": "capitalization"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses English-style Title Case, which is incorrect for Italian UI; only the first word should be capitalized.",
+      "evidence": "Iniziare",
+      "corrected": "Pronto per iniziare?",
+      "rules": [
+       "Capitalization Rules for Italian UI"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "grammar/capitalization",
+         "ui_term_glossary/term_translations"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c26",
+     "half": "fixed",
+     "product": "medical transcription",
+     "context": "closing call to action",
+     "englishSource": null,
+     "text": "Pronto per iniziare?",
+     "errorType": "capitalization"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text follows the sentence case rule and is grammatically correct.",
+      "evidence": "",
+      "corrected": "Pronto per iniziare?",
+      "rules": [
+       "Capitalization Rules for Italian UI"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/term_translations",
+         "grammar/capitalization"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c28",
+     "half": "shipped",
+     "product": "backup software",
+     "context": "section heading",
+     "englishSource": null,
+     "text": "Perché le imprese scegli [BRAND]",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The verb 'scegli' is singular and does not agree with the plural subject 'le imprese'.",
+      "evidence": "scegli",
+      "corrected": "Perché le imprese scelgono [BRAND]",
+      "rules": [
+       "# Gender, Number & Agreement Rules/Verb–subject agreement"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "grammar/agreement",
+         "microsoft_style_reference/grammar_standards"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "c28",
+     "half": "fixed",
+     "product": "backup software",
+     "context": "section heading",
+     "englishSource": null,
+     "text": "Perché le imprese scelgono [BRAND]",
+     "errorType": "agreement"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The heading uses English-style Title Case, which is incorrect in Italian UI; it should be in sentence case.",
+      "evidence": "Perché le imprese scelgono [BRAND]",
+      "corrected": "Perché le imprese scelgono [BRAND]",
+      "rules": [
+       "Capitalization Rules for Italian UI"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "calques_and_false_friends",
+         "grammar/capitalization",
+         "ui_term_glossary/term_translations"
+        ]
+       }
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

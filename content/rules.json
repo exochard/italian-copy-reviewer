@@ -1,0 +1,271 @@
+[
+ {
+  "slug": "trusted-by-calque",
+  "title": "\"Trusted by\" is not \"Fidato da\"",
+  "category": "calque",
+  "severity": "major",
+  "rule": "Social-proof lines translate the intent, not the words. \"Fidato da\" is a literal calque of \"Trusted by\" and reads as machine output. Use \"Scelto da\", \"Usato da\" or \"Già X aziende lo usano\".",
+  "prefer": [
+   "Scelto da",
+   "Usato da"
+  ],
+  "avoid": [
+   "Fidato da"
+  ],
+  "cases": [
+   "c14",
+   "c19",
+   "c22"
+  ]
+ },
+ {
+  "slug": "powered-by",
+  "title": "\"Powered by\" and English taglines",
+  "category": "untranslated",
+  "severity": "major",
+  "rule": "Taglines such as \"Powered by AI\" or \"Multi-platform\" must be translated like any other copy: \"Basato sull'IA\", \"Con tecnologia IA\", \"Multipiattaforma\".",
+  "prefer": [
+   "Basato sull'IA",
+   "Multipiattaforma"
+  ],
+  "avoid": [
+   "Powered by",
+   "Multi-platform"
+  ],
+  "cases": [
+   "c11"
+  ]
+ },
+ {
+  "slug": "plus-sign-quantities",
+  "title": "Quantities: \"oltre\", not \"+\"",
+  "category": "number_format",
+  "severity": "major",
+  "rule": "Italian copy expresses \"15.000+\" as \"oltre 15.000\" and never glues the sign to the noun (\"6+piattaforme\"). The plus sign is an English convention.",
+  "prefer": [
+   "oltre 15.000",
+   "più di 6"
+  ],
+  "avoid": [
+   "15.000+"
+  ],
+  "cases": [
+   "c12",
+   "c15",
+   "c21"
+  ]
+ },
+ {
+  "slug": "number-separators",
+  "title": "Thousands with a dot, words for big numbers",
+  "category": "number_format",
+  "severity": "minor",
+  "rule": "Italian groups thousands with a dot and uses a decimal comma: 9.500, 2,5. \"9,500\" means nine and a half. In headlines write \"miliardi\" instead of abbreviations such as \"Mld\".",
+  "prefer": [
+   "9.500",
+   "5 miliardi"
+  ],
+  "avoid": [
+   "9,500",
+   "5 Mld+"
+  ],
+  "cases": [
+   "c22",
+   "c01"
+  ]
+ },
+ {
+  "slug": "no-leftover-english",
+  "title": "No leftover English on an Italian page",
+  "category": "untranslated",
+  "severity": "major",
+  "rule": "Buttons, badges, section headers, list endings and feature bullets must all be Italian. Leftover English (\"SALE\", \"Explore all features\") and CMS placeholders (\"Secondary text\") are release bugs. Product and brand names stay as they are.",
+  "prefer": [
+   "Offerte",
+   "Scopri tutte le funzionalità"
+  ],
+  "avoid": [
+   "SALE",
+   "Explore all features"
+  ],
+  "cases": [
+   "c04",
+   "c07",
+   "c08",
+   "c09",
+   "c13",
+   "c23",
+   "c27"
+  ]
+ },
+ {
+  "slug": "sentence-case",
+  "title": "Sentence case, not Title Case; ALL CAPS is fine",
+  "category": "capitalization",
+  "severity": "minor",
+  "rule": "Italian headings, buttons and calls to action capitalise only the first word and proper nouns. English Title Case (\"Pronto per Iniziare?\") looks translated. The rule is about mixed capitals only: a heading set in ALL CAPS is a design choice and is fine, and a brand name keeps its own capitals.",
+  "prefer": [
+   "Pronto per iniziare?",
+   "PRONTO PER INIZIARE?"
+  ],
+  "avoid": [
+   "Pronto per Iniziare?"
+  ],
+  "cases": [
+   "c26"
+  ]
+ },
+ {
+  "slug": "agreement",
+  "title": "Gender and number agreement",
+  "category": "agreement",
+  "severity": "major",
+  "rule": "Adjectives, articles and nouns agree in gender and number: \"documenti falsi\", \"pagine aggiornate\", \"due nuovi strumenti\". Machine-translated copy often agrees the adjective with the wrong noun.",
+  "prefer": [
+   "documenti falsi",
+   "pagine aggiornate"
+  ],
+  "avoid": [
+   "ID False",
+   "pagine aggiornati"
+  ],
+  "cases": [
+   "c03",
+   "c24",
+   "c29"
+  ]
+ },
+ {
+  "slug": "verb-conjugation",
+  "title": "Verbs agree with their subject",
+  "category": "agreement",
+  "severity": "major",
+  "rule": "A plural subject takes a plural verb: \"le imprese scelgono\", not \"le imprese scegli\". Check every verb in headings that were translated from English questions.",
+  "prefer": [
+   "Perché le imprese scelgono"
+  ],
+  "avoid": [
+   "Perché le imprese scegli"
+  ],
+  "cases": [
+   "c28"
+  ]
+ },
+ {
+  "slug": "false-friends",
+  "title": "Wrong word sense",
+  "category": "wrong_word_sense",
+  "severity": "critical",
+  "rule": "Dictionary translations pick the wrong sense of a word. \"Speakers\" meaning people are \"madrelingua\" or \"parlanti\", never \"altoparlanti\" (loudspeakers). Check every word with a misleading Italian twin: \"eventually\" is \"alla fine\", not \"eventualmente\" (which means \"possibly\"); \"actually\" is \"in realtà\", not \"attualmente\" (currently).",
+  "prefer": [
+   "madrelingua",
+   "alla fine",
+   "in realtà"
+  ],
+  "avoid": [
+   "altoparlanti",
+   "eventualmente (for eventually)",
+   "attualmente (for actually)"
+  ],
+  "cases": [
+   "c01",
+   "c02"
+  ]
+ },
+ {
+  "slug": "idiom-calques",
+  "title": "Translate idioms by meaning",
+  "category": "calque",
+  "severity": "major",
+  "rule": "English idioms need an Italian equivalent, not a word-for-word copy: \"Top Picks\" is \"I più scelti\" (not \"I migliori gusti\", the best flavours); \"bloated\" software is \"sovraccarico\", not \"gonfio\"; \"game changer\" is \"una svolta\", not \"cambiatore di gioco\".",
+  "prefer": [
+   "I più scelti",
+   "sovraccarico"
+  ],
+  "avoid": [
+   "I migliori gusti",
+   "gonfio di funzionalità"
+  ],
+  "cases": [
+   "c06",
+   "c20",
+   "c16"
+  ]
+ },
+ {
+  "slug": "italian-spelling-of-terms",
+  "title": "Italian spelling of borrowed terms",
+  "category": "misspelling",
+  "severity": "major",
+  "rule": "Derived product terms follow Italian spelling, not an invented or English-shaped form: \"parafrasatore\" (not \"parafrasiatore\"), \"traduttore\", \"correttore\". When unsure, check the term in a dictionary before shipping.",
+  "prefer": [
+   "parafrasatore"
+  ],
+  "avoid": [
+   "parafrasiatore"
+  ],
+  "cases": [
+   "c05",
+   "c25"
+  ]
+ },
+ {
+  "slug": "encoding",
+  "title": "Characters must render",
+  "category": "encoding",
+  "severity": "critical",
+  "rule": "Apostrophes and accented letters must survive the pipeline. \"uní\" in place of \"un'\" or \"Ã¨\" in place of \"è\" is a broken encoding, and it usually sits on the main call to action.",
+  "prefer": [
+   "un'immagine",
+   "è"
+  ],
+  "avoid": [
+   "uníimmagine",
+   "Ã¨"
+  ],
+  "cases": [
+   "c10"
+  ]
+ },
+ {
+  "slug": "machine-word-order",
+  "title": "Rewrite machine word order",
+  "category": "ungrammatical",
+  "severity": "critical",
+  "rule": "English noun stacks (\"Real Estate Photo Enhancement\") cannot be mapped word by word. Rebuild the phrase with Italian order and a verb where a heading needs one: \"Migliora le foto degli immobili\".",
+  "prefer": [
+   "Migliora le foto degli immobili con l'IA"
+  ],
+  "avoid": [
+   "Migliorati immobiliare foto con AI"
+  ],
+  "cases": [
+   "c17",
+   "c18"
+  ]
+ },
+ {
+  "slug": "consistent-naming",
+  "title": "One name per feature",
+  "category": "consistency",
+  "severity": "minor",
+  "rule": "A feature keeps one Italian name across the page and the product. Two spellings or two translations of the same tool (\"parafrasatore\" and \"Parafrasiatore\") read as carelessness.",
+  "prefer": [],
+  "avoid": [],
+  "cases": [
+   "c05"
+  ]
+ },
+ {
+  "slug": "ai-abbreviation",
+  "title": "\"IA\" or \"AI\": either, never mixed",
+  "category": "consistency",
+  "severity": "minor",
+  "rule": "Both \"IA\" (intelligenza artificiale) and the English \"AI\" are correct in Italian product copy; our field practice prefers \"IA\" in running text. A single string that uses either form is fine. Flag only a text that mixes the two.",
+  "prefer": [
+   "IA"
+  ],
+  "avoid": [],
+  "cases": []
+ }
+]
