@@ -9,8 +9,8 @@ Built for the [DEV Sanity Challenge](https://dev.to/challenges/sanity-2026-09-16
 
 ## How it works
 
-- `content/rules.json`, `content/glossary.json`: 15 rules and 19 glossary terms. Every
-  rule carries real examples of strings shipped on live Italian product pages, taken from
+- `content/rules.json`, `content/glossary.json`: 21 rules and 24 glossary terms. Fourteen
+  rules carry real examples of strings shipped on live Italian product pages, taken from
   the train half of a 29-pair benchmark (`content/cases.jsonl`, brand names masked). The
   test half never enters the Knowledge Base (`content/split.json`; `src/core.test.ts`
   asserts the split is disjoint).
