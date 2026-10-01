@@ -149,5 +149,50 @@
    "bilioni"
   ],
   "note": "\"Bilione\" is a false friend (10^12)."
+ },
+ {
+  "english": "Workspace",
+  "preferred": "Spazio di lavoro",
+  "avoid": [
+   "workspace",
+   "area di lavoro"
+  ],
+  "note": "House term. Never keep the English word in Italian copy."
+ },
+ {
+  "english": "Checkout",
+  "preferred": "Pagamento",
+  "avoid": [
+   "checkout",
+   "cassa"
+  ],
+  "note": "The page where an order is paid. Buttons say \"Vai al pagamento\"."
+ },
+ {
+  "english": "Pro plan (tier name)",
+  "preferred": "Pro",
+  "avoid": [
+   "Professionale"
+  ],
+  "note": "Plan names are fixed: Free, Pro and Team, in English and capitalised, written \"piano Pro\". They are product names, so they are not translated."
+ },
+ {
+  "english": "Free plan (tier name)",
+  "preferred": "Free",
+  "avoid": [
+   "Gratuito",
+   "Gratis"
+  ],
+  "note": "Written \"piano Free\"; \"gratuito\" stays for a trial, never for the plan name."
+ },
+ {
+  "english": "Email",
+  "preferred": "email",
+  "avoid": [
+   "e-mail",
+   "mail",
+   "Email"
+  ],
+  "note": "One word, lowercase inside a sentence, no hyphen."
  }
 ]

@@ -1,7 +1,10 @@
 import assert from "node:assert/strict";
 import { join, dirname } from "node:path";
 import { test } from "node:test";
+import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { rescore } from "./rescore.ts";
 import { casesPath, contextMcpUrl, grounded, loadItems, Review, score, userPrompt } from "./core.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -70,7 +73,7 @@ test("a flag that relies only on trigger rules needs one trigger in the text", (
   assert.equal(flag("Da 1 a oltre 15.000 computer", plus), "ok");
   assert.equal(flag("Offri video didattici", ["AI & Tech Abbreviations"]), "ok");
   assert.equal(flag("Basato sull'AI", ["ai_and_tech_abbreviations"]), "ok");
-  assert.equal(flag("Basato sull'AI", ["rule.ai-abbreviation"]), "ok");
+  assert.equal(flag("Basato sull'AI", ["rule-ai-abbreviation"]), "ok");
   assert.equal(flag("Basato sull'AI, rilevatore IA", ["linguistics/acronyms/ai-ia"]), "error");
   // Several trigger rules: the flag stays when one of them is triggered.
   assert.equal(flag("RILEVATORE DI PLAGIO CON IA", [...caps, "AI & Tech Abbreviations"]), "ok");
@@ -83,4 +86,40 @@ test("a flag that relies only on trigger rules needs one trigger in the text", (
   assert.equal(flag("Pronto per Iniziare?", [], "Uses English Title Case."), "error");
   assert.equal(flag("Perché le imprese scegli [BRAND]", [], "Verb agreement."), "error");
   assert.equal(flag("Offerte riservate ai clienti", [], "Manca l'articolo davanti ai clienti."), "error");
+});
+
+test("the house split is disjoint from train and test and holds 12 to 16 pairs", () => {
+  const houseItems = loadItems(cases, split, "house");
+  const ids = new Set(houseItems.map((i) => i.caseId));
+  assert.ok(ids.size >= 12 && ids.size <= 16);
+  assert.equal(houseItems.length, ids.size * 2);
+  for (const other of ["train", "test"] as const) {
+    assert.ok(loadItems(cases, split, other).every((i) => !ids.has(i.caseId)));
+  }
+  assert.ok(loadItems(cases, split, "all").length >= houseItems.length);
+  const labels: Record<string, string> = JSON.parse(readFileSync(split, "utf8"));
+  assert.ok([...ids].every((id) => labels[id] === "house"));
+  const benchmark = readFileSync(cases, "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l).id);
+  assert.ok(benchmark.every((id: string) => !ids.has(id)));
+});
+
+test("the seed carries the house rules and no house pair string", () => {
+  const py = "import json,sys; sys.path.insert(0,'content'); import build_seed; print(json.dumps(build_seed.build()))";
+  const docs: { _id: string; category?: string; examples?: unknown[] }[] =
+    JSON.parse(execFileSync("python3", ["-c", py], { cwd: join(here, ".."), encoding: "utf8" }));
+  const houseRules = docs.filter((d) => d.category === "house_style");
+  assert.ok(houseRules.length >= 6);
+  assert.ok(houseRules.every((d) => d.examples?.length === 0));
+  const seed = JSON.stringify(docs);
+  for (const item of loadItems(cases, split, "house")) {
+    assert.ok(!seed.includes(JSON.stringify(item.text).slice(1, -1)), `${item.caseId}:${item.half} leaked into the seed`);
+  }
+});
+
+test("rescore applies the filter to either arm and prefers the saved raw review", () => {
+  const [item] = loadItems(cases, split, "test").filter((i) => i.half === "fixed");
+  const raw = { verdict: "error" as const, reason: "r", evidence: ["not in the text"], corrected: "c", rules: [] };
+  const runs = [{ item, verdict: "error" as const, detail: { review: { ...raw, verdict: "ok" as const }, raw } }];
+  assert.equal(rescore(runs, false).fixesLeftAlone, "0/1");
+  assert.equal(rescore(runs, true).fixesLeftAlone, "1/1");
 });

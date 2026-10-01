@@ -40,6 +40,9 @@ Needs Node 22+, a free Sanity account and a Gemini API key (Google AI Studio fre
 3. Dashboard → Context → **New knowledge base**. Add the **Dataset** (production) and the
    Microsoft style guide (as a file, or as a website source with the URL above). Build the
    entries and note the knowledge base id (`kb…`).
+   After any later import, rebuild it (Sources → Check for changes, then Rebuild): the
+   entries are a built snapshot and an import alone does not change them. Document IDs use
+   dashes, not dots, because Sanity keeps dotted IDs private even in a public dataset.
 4. Create a Context MCP configuration in knowledge-base mode; note its endpoint name.
 5. Manage → API → Tokens, at organization level: a token with **Context Viewer**.
 6. Write `.env`:
@@ -72,8 +75,14 @@ Held-out test pairs (12), `gemini-3.1-flash-lite`, pairs fully right (`npm run e
 | 2026-09-28, first version | 7/12 | 4/12 |
 | 2026-09-29, quote check | 9/12 | 5/12 |
 | 2026-09-30, per-rule trigger check | 9/12 | 9/12 |
+| 2026-10-01, same filter on both arms (`--shared-filter`) | 10/12 | 11/12 |
 
-Latest run: model alone 11/12 bugs caught and 10/12 fixes left alone; with
+House-style pairs (16, `npm run eval -- --split house --shared-filter`), 2026-10-01: model alone
+0/16, with the Knowledge Base 10/16, no correct string flagged by either arm. These pairs
+break rules the team chose (tu not Lei, "persona" not "utente", 29 €, no "!") and exist only
+in the Knowledge Base, so they measure what grounding adds, not how often real copy breaks them.
+
+Sep 30 run: model alone 11/12 bugs caught and 10/12 fixes left alone; with
 the Knowledge Base 10/12 and 11/12. Every change was tuned on the 17 train
 pairs, except the literal-text line in the prompt, which came from a test failure.
 `node --experimental-strip-types src/rescore.ts results/eval-<id>.json` re-applies the flag

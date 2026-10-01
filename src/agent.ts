@@ -41,13 +41,17 @@ export async function connectKnowledgeBase(): Promise<MCPClient> {
 export async function review(
   item: Pick<Item, "product" | "context" | "englishSource" | "text">,
   kb: MCPClient | null,
-): Promise<{ review: Review; toolCalls: { tool: string; input: unknown }[] }> {
+  // Default keeps the original behaviour: the code filter guards the grounded arm only.
+  // The eval passes true to put the model-alone arm behind the same filter.
+  filter: boolean = kb !== null,
+): Promise<{ review: Review; raw: Review; toolCalls: { tool: string; input: unknown }[] }> {
+  const finish = (raw: Review, text: string) => ({ review: filter ? grounded(raw, text) : raw, raw });
   // Free-tier Gemini answers 503 under load; the SDK backs off exponentially between tries.
   const common = { model: model(), temperature: 0, maxRetries: 8 } as const;
   if (!kb) {
     const result = await generateText({ ...common, system: SYSTEM_NO_KB, prompt: userPrompt(item),
       output: Output.object({ schema: Review }) });
-    return { review: result.output, toolCalls: [] };
+    return { ...finish(result.output, item.text), toolCalls: [] };
   }
   // Gemini ends a tool loop with prose, not the requested object, so the grounded review
   // runs in two calls: the agent reads the Knowledge Base, then writes the typed verdict
@@ -72,5 +76,5 @@ ${research.text}
 Give the final review. In "rules", list the Knowledge Base entry paths you relied on.
 In "evidence", copy each wrong fragment of the Italian text exactly, one per item.`,
     output: Output.object({ schema: Review }) });
-  return { review: grounded(verdict.output, item.text), toolCalls };
+  return { ...finish(verdict.output, item.text), toolCalls };
 }

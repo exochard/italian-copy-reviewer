@@ -1,0 +1,2517 @@
+{
+ "model": "gemini-3.1-flash-lite",
+ "split": "house",
+ "sharedFilter": true,
+ "items": 32,
+ "no_kb": {
+  "score": {
+   "bugsCaught": "0/16",
+   "fixesLeftAlone": "16/16",
+   "pairsFullyRight": "0/16",
+   "pairedScore": 0,
+   "failed": 0
+  },
+  "runs": [
+   {
+    "item": {
+     "caseId": "h01",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "button",
+     "englishSource": "Create a new workspace",
+     "text": "Crea un nuovo workspace",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Il termine workspace è comunemente accettato e utilizzato nel settore software in Italia.",
+      "evidence": [],
+      "corrected": "Crea un nuovo workspace",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "Il termine workspace è comunemente accettato e utilizzato nel settore software in Italia.",
+      "evidence": [],
+      "corrected": "Crea un nuovo workspace",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h01",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "button",
+     "englishSource": "Create a new workspace",
+     "text": "Crea un nuovo spazio di lavoro",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurately conveys the meaning of the source text in a software context.",
+      "evidence": [],
+      "corrected": "Crea un nuovo spazio di lavoro",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurately conveys the meaning of the source text in a software context.",
+      "evidence": [],
+      "corrected": "Crea un nuovo spazio di lavoro",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h02",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "menu item",
+     "englishSource": "Switch to another workspace",
+     "text": "Passa a un altro workspace",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "Il termine workspace è comunemente accettato nel gergo informatico italiano e la traduzione è corretta.",
+      "evidence": [],
+      "corrected": "Passa a un altro workspace",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "Il termine workspace è comunemente accettato nel gergo informatico italiano e la traduzione è corretta.",
+      "evidence": [],
+      "corrected": "Passa a un altro workspace",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h02",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "menu item",
+     "englishSource": "Switch to another workspace",
+     "text": "Passa a un altro spazio di lavoro",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurately conveys the meaning of the source text in a professional software context.",
+      "evidence": [],
+      "corrected": "Passa a un altro spazio di lavoro",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurately conveys the meaning of the source text in a professional software context.",
+      "evidence": [],
+      "corrected": "Passa a un altro spazio di lavoro",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h03",
+     "half": "shipped",
+     "product": "online shop builder",
+     "context": "button on the cart page",
+     "englishSource": "Return to checkout to complete your order",
+     "text": "Torna al checkout per completare l'ordine",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and correctly uses the standard terminology for e-commerce in Italian.",
+      "evidence": [],
+      "corrected": "Torna al checkout per completare l'ordine",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and correctly uses the standard terminology for e-commerce in Italian.",
+      "evidence": [],
+      "corrected": "Torna al checkout per completare l'ordine",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h03",
+     "half": "fixed",
+     "product": "online shop builder",
+     "context": "button on the cart page",
+     "englishSource": "Return to checkout to complete your order",
+     "text": "Torna al pagamento per completare l'ordine",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and follows standard e-commerce terminology in Italian.",
+      "evidence": [],
+      "corrected": "Torna al pagamento per completare l'ordine",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and follows standard e-commerce terminology in Italian.",
+      "evidence": [],
+      "corrected": "Torna al pagamento per completare l'ordine",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h04",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "upgrade banner",
+     "englishSource": "Upgrade to the Pro plan",
+     "text": "Passa al piano Professionale",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and correctly conveys the meaning of the source text in a professional software context.",
+      "evidence": [],
+      "corrected": "Passa al piano Professionale",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and correctly conveys the meaning of the source text in a professional software context.",
+      "evidence": [],
+      "corrected": "Passa al piano Professionale",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h04",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "upgrade banner",
+     "englishSource": "Upgrade to the Pro plan",
+     "text": "Passa al piano Pro",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and idiomatic for a SaaS upgrade call-to-action.",
+      "evidence": [],
+      "corrected": "Passa al piano Pro",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and idiomatic for a SaaS upgrade call-to-action.",
+      "evidence": [],
+      "corrected": "Passa al piano Pro",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h05",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "pricing note",
+     "englishSource": "The Free plan includes 3 projects",
+     "text": "Il piano Gratuito include 3 progetti",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, natural, and grammatically correct.",
+      "evidence": [],
+      "corrected": "Il piano Gratuito include 3 progetti",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, natural, and grammatically correct.",
+      "evidence": [],
+      "corrected": "Il piano Gratuito include 3 progetti",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h05",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "pricing note",
+     "englishSource": "The Free plan includes 3 projects",
+     "text": "Il piano Free include 3 progetti",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, natural, and grammatically correct.",
+      "evidence": [],
+      "corrected": "Il piano Free include 3 progetti",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, natural, and grammatically correct.",
+      "evidence": [],
+      "corrected": "Il piano Free include 3 progetti",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h06",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "form label",
+     "englishSource": "Enter your email address",
+     "text": "Inserisci il tuo indirizzo e-mail",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a software interface.",
+      "evidence": [],
+      "corrected": "Inserisci il tuo indirizzo e-mail",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a software interface.",
+      "evidence": [],
+      "corrected": "Inserisci il tuo indirizzo e-mail",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h06",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "form label",
+     "englishSource": "Enter your email address",
+     "text": "Inserisci il tuo indirizzo email",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a software interface.",
+      "evidence": [],
+      "corrected": "Inserisci il tuo indirizzo email",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a software interface.",
+      "evidence": [],
+      "corrected": "Inserisci il tuo indirizzo email",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h07",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "login page",
+     "englishSource": "Sign in to your account to continue",
+     "text": "Acceda al suo account per continuare",
+     "errorType": "house_voice"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is grammatically correct and uses a professional, formal tone appropriate for a login page.",
+      "evidence": [],
+      "corrected": "Acceda al suo account per continuare",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is grammatically correct and uses a professional, formal tone appropriate for a login page.",
+      "evidence": [],
+      "corrected": "Acceda al suo account per continuare",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h07",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "login page",
+     "englishSource": "Sign in to your account to continue",
+     "text": "Accedi al tuo account per continuare",
+     "errorType": "house_voice"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for the context of a login page.",
+      "evidence": [],
+      "corrected": "Accedi al tuo account per continuare",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for the context of a login page.",
+      "evidence": [],
+      "corrected": "Accedi al tuo account per continuare",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h08",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "login help text",
+     "englishSource": "If you forgot your password, reset it here",
+     "text": "Se ha dimenticato la password, la reimposti qui",
+     "errorType": "house_voice"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The sentence is grammatically correct and uses the appropriate formal register for a software interface.",
+      "evidence": [],
+      "corrected": "Se ha dimenticato la password, la reimposti qui",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The sentence is grammatically correct and uses the appropriate formal register for a software interface.",
+      "evidence": [],
+      "corrected": "Se ha dimenticato la password, la reimposti qui",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h08",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "login help text",
+     "englishSource": "If you forgot your password, reset it here",
+     "text": "Se hai dimenticato la password, reimpostala qui",
+     "errorType": "house_voice"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and follows standard Italian UI conventions.",
+      "evidence": [],
+      "corrected": "Se hai dimenticato la password, reimpostala qui",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and follows standard Italian UI conventions.",
+      "evidence": [],
+      "corrected": "Se hai dimenticato la password, reimpostala qui",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h09",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "error toast",
+     "englishSource": "We couldn't save your changes. Try again later.",
+     "text": "Impossibile salvare le modifiche. Riprovare più tardi.",
+     "errorType": "house_phrasing"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, professional, and correctly uses the impersonal form typical of software error messages.",
+      "evidence": [],
+      "corrected": "Impossibile salvare le modifiche. Riprovare più tardi.",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, professional, and correctly uses the impersonal form typical of software error messages.",
+      "evidence": [],
+      "corrected": "Impossibile salvare le modifiche. Riprovare più tardi.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h09",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "error toast",
+     "englishSource": "We couldn't save your changes. Try again later.",
+     "text": "Non siamo riusciti a salvare le modifiche. Riprova più tardi.",
+     "errorType": "house_phrasing"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and follows standard Italian software localization conventions.",
+      "evidence": [],
+      "corrected": "Non siamo riusciti a salvare le modifiche. Riprova più tardi.",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and follows standard Italian software localization conventions.",
+      "evidence": [],
+      "corrected": "Non siamo riusciti a salvare le modifiche. Riprova più tardi.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h10",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "upload error",
+     "englishSource": "Error: the file is too large",
+     "text": "Errore: il file è troppo grande",
+     "errorType": "house_phrasing"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for the context.",
+      "evidence": [],
+      "corrected": "Errore: il file è troppo grande",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for the context.",
+      "evidence": [],
+      "corrected": "Errore: il file è troppo grande",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h10",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "upload error",
+     "englishSource": "Error: the file is too large",
+     "text": "Non siamo riusciti a caricare il file: è troppo grande",
+     "errorType": "house_phrasing"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and grammatically correct for a software interface.",
+      "evidence": [],
+      "corrected": "Non siamo riusciti a caricare il file: è troppo grande",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and grammatically correct for a software interface.",
+      "evidence": [],
+      "corrected": "Non siamo riusciti a caricare il file: è troppo grande",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h11",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "success toast",
+     "englishSource": "Your project has been created!",
+     "text": "Il tuo progetto è stato creato!",
+     "errorType": "house_punctuation"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a success notification.",
+      "evidence": [],
+      "corrected": "Il tuo progetto è stato creato!",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a success notification.",
+      "evidence": [],
+      "corrected": "Il tuo progetto è stato creato!",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h11",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "success toast",
+     "englishSource": "Your project has been created!",
+     "text": "Il tuo progetto è stato creato.",
+     "errorType": "house_punctuation"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a success notification.",
+      "evidence": [],
+      "corrected": "Il tuo progetto è stato creato.",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a success notification.",
+      "evidence": [],
+      "corrected": "Il tuo progetto è stato creato.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h12",
+     "half": "shipped",
+     "product": "online shop builder",
+     "context": "order confirmation",
+     "englishSource": "Payment received, thank you!",
+     "text": "Pagamento ricevuto, grazie!",
+     "errorType": "house_punctuation"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for the context.",
+      "evidence": [],
+      "corrected": "Pagamento ricevuto, grazie!",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for the context.",
+      "evidence": [],
+      "corrected": "Pagamento ricevuto, grazie!",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h12",
+     "half": "fixed",
+     "product": "online shop builder",
+     "context": "order confirmation",
+     "englishSource": "Payment received, thank you!",
+     "text": "Pagamento ricevuto, grazie.",
+     "errorType": "house_punctuation"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for the context.",
+      "evidence": [],
+      "corrected": "Pagamento ricevuto, grazie.",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for the context.",
+      "evidence": [],
+      "corrected": "Pagamento ricevuto, grazie.",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h13",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "button",
+     "englishSource": "Invite a user to the project",
+     "text": "Invita un utente nel progetto",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "La traduzione è corretta e naturale nel contesto di un software di gestione progetti.",
+      "evidence": [],
+      "corrected": "Invita un utente nel progetto",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "La traduzione è corretta e naturale nel contesto di un software di gestione progetti.",
+      "evidence": [],
+      "corrected": "Invita un utente nel progetto",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h13",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "button",
+     "englishSource": "Invite a user to the project",
+     "text": "Invita una persona nel progetto",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "La traduzione è corretta, naturale e adatta al contesto di un'interfaccia software.",
+      "evidence": [],
+      "corrected": "Invita una persona nel progetto",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "La traduzione è corretta, naturale e adatta al contesto di un'interfaccia software.",
+      "evidence": [],
+      "corrected": "Invita una persona nel progetto",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h14",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "analytics card title",
+     "englishSource": "Active users this month",
+     "text": "Gli utenti attivi questo mese",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurately reflects the meaning of the source text in a professional software context.",
+      "evidence": [],
+      "corrected": "Gli utenti attivi questo mese",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurately reflects the meaning of the source text in a professional software context.",
+      "evidence": [],
+      "corrected": "Gli utenti attivi questo mese",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h14",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "analytics card title",
+     "englishSource": "Active users this month",
+     "text": "Le persone attive questo mese",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "La traduzione è naturale e accurata nel contesto di un'interfaccia di gestione progetti.",
+      "evidence": [],
+      "corrected": "Le persone attive questo mese",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "La traduzione è naturale e accurata nel contesto di un'interfaccia di gestione progetti.",
+      "evidence": [],
+      "corrected": "Le persone attive questo mese",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h15",
+     "half": "shipped",
+     "product": "online shop builder",
+     "context": "pricing line",
+     "englishSource": "From €29 per month",
+     "text": "Da €29 al mese",
+     "errorType": "house_format"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and follows standard Italian pricing conventions.",
+      "evidence": [],
+      "corrected": "Da €29 al mese",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and follows standard Italian pricing conventions.",
+      "evidence": [],
+      "corrected": "Da €29 al mese",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h15",
+     "half": "fixed",
+     "product": "online shop builder",
+     "context": "pricing line",
+     "englishSource": "From €29 per month",
+     "text": "Da 29 € al mese",
+     "errorType": "house_format"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and follows standard Italian formatting for pricing.",
+      "evidence": [],
+      "corrected": "Da 29 € al mese",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and follows standard Italian formatting for pricing.",
+      "evidence": [],
+      "corrected": "Da 29 € al mese",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h16",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "offline banner",
+     "englishSource": "Please check your connection",
+     "text": "Per favore, controlla la tua connessione",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a software interface.",
+      "evidence": [],
+      "corrected": "Per favore, controlla la tua connessione",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and appropriate for a software interface.",
+      "evidence": [],
+      "corrected": "Per favore, controlla la tua connessione",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   },
+   {
+    "item": {
+     "caseId": "h16",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "offline banner",
+     "englishSource": "Please check your connection",
+     "text": "Controlla la tua connessione",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and appropriate for the context of a software interface.",
+      "evidence": [],
+      "corrected": "Controlla la tua connessione",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, accurate, and appropriate for the context of a software interface.",
+      "evidence": [],
+      "corrected": "Controlla la tua connessione",
+      "rules": []
+     },
+     "toolCalls": []
+    }
+   }
+  ]
+ },
+ "kb": {
+  "score": {
+   "bugsCaught": "10/16",
+   "fixesLeftAlone": "16/16",
+   "pairsFullyRight": "10/16",
+   "pairedScore": 0.625,
+   "failed": 0
+  },
+  "runs": [
+   {
+    "item": {
+     "caseId": "h01",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "button",
+     "englishSource": "Create a new workspace",
+     "text": "Crea un nuovo workspace",
+     "errorType": "house_term"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The term 'workspace' is a house term that must be translated as 'spazio di lavoro' according to the style guide.",
+      "evidence": [
+       "workspace"
+      ],
+      "corrected": "Crea un nuovo spazio di lavoro",
+      "rules": [
+       "ui_term_glossary/feature_product_terms"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "The term 'workspace' is a house term that must be translated as 'spazio di lavoro' according to the style guide.",
+      "evidence": [
+       "workspace"
+      ],
+      "corrected": "Crea un nuovo spazio di lavoro",
+      "rules": [
+       "ui_term_glossary/feature_product_terms"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/feature_product_terms",
+         "ui_term_glossary/cta_buttons"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h01",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "button",
+     "englishSource": "Create a new workspace",
+     "text": "Crea un nuovo spazio di lavoro",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the house term for workspace and follows standard Italian UI conventions.",
+      "evidence": [],
+      "corrected": "Crea un nuovo spazio di lavoro",
+      "rules": [
+       "ui_term_glossary/feature_product_terms/term-workspace"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the house term for workspace and follows standard Italian UI conventions.",
+      "evidence": [],
+      "corrected": "Crea un nuovo spazio di lavoro",
+      "rules": [
+       "ui_term_glossary/feature_product_terms/term-workspace"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/feature_product_terms",
+         "ui_term_glossary/cta_buttons"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h02",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "menu item",
+     "englishSource": "Switch to another workspace",
+     "text": "Passa a un altro workspace",
+     "errorType": "house_term"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The term 'workspace' is a house term that must be translated as 'spazio di lavoro' according to the style guide.",
+      "evidence": [
+       "workspace"
+      ],
+      "corrected": "Passa a un altro spazio di lavoro",
+      "rules": [
+       "ui_term_glossary/feature_product_terms/term-workspace"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "The term 'workspace' is a house term that must be translated as 'spazio di lavoro' according to the style guide.",
+      "evidence": [
+       "workspace"
+      ],
+      "corrected": "Passa a un altro spazio di lavoro",
+      "rules": [
+       "ui_term_glossary/feature_product_terms/term-workspace"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/feature_product_terms",
+         "calques_and_false_friends/term_glossary"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h02",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "menu item",
+     "englishSource": "Switch to another workspace",
+     "text": "Passa a un altro spazio di lavoro",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the house term 'spazio di lavoro' as specified in the glossary.",
+      "evidence": [],
+      "corrected": "Passa a un altro spazio di lavoro",
+      "rules": [
+       "term-workspace"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the house term 'spazio di lavoro' as specified in the glossary.",
+      "evidence": [],
+      "corrected": "Passa a un altro spazio di lavoro",
+      "rules": [
+       "term-workspace"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/feature_product_terms"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h03",
+     "half": "shipped",
+     "product": "online shop builder",
+     "context": "button on the cart page",
+     "englishSource": "Return to checkout to complete your order",
+     "text": "Torna al checkout per completare l'ordine",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and accurate for the context of an e-commerce checkout flow.",
+      "evidence": [],
+      "corrected": "Torna al checkout per completare l'ordine",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and accurate for the context of an e-commerce checkout flow.",
+      "evidence": [],
+      "corrected": "Torna al checkout per completare l'ordine",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/cta_buttons",
+         "calques_and_false_friends/term_glossary"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h03",
+     "half": "fixed",
+     "product": "online shop builder",
+     "context": "button on the cart page",
+     "englishSource": "Return to checkout to complete your order",
+     "text": "Torna al pagamento per completare l'ordine",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and accurate for the context of a checkout flow.",
+      "evidence": [],
+      "corrected": "Torna al pagamento per completare l'ordine",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and accurate for the context of a checkout flow.",
+      "evidence": [],
+      "corrected": "Torna al pagamento per completare l'ordine",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/cta_buttons",
+         "calques_and_false_friends/term_glossary"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h04",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "upgrade banner",
+     "englishSource": "Upgrade to the Pro plan",
+     "text": "Passa al piano Professionale",
+     "errorType": "house_term"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The plan name 'Professionale' is a translation of a product name, which must remain as 'Pro' according to the style guide.",
+      "evidence": [
+       "Professionale"
+      ],
+      "corrected": "Passa al piano Pro",
+      "rules": [
+       "ui_term_glossary/plan_tier_terms"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "The plan name 'Professionale' is a translation of a product name, which must remain as 'Pro' according to the style guide.",
+      "evidence": [
+       "Professionale"
+      ],
+      "corrected": "Passa al piano Pro",
+      "rules": [
+       "ui_term_glossary/plan_tier_terms"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/plan_tier_terms",
+         "ui_term_glossary/cta_buttons"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h04",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "upgrade banner",
+     "englishSource": "Upgrade to the Pro plan",
+     "text": "Passa al piano Pro",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and follows the style guide for plan names.",
+      "evidence": [],
+      "corrected": "Passa al piano Pro",
+      "rules": [
+       "ui_term_glossary/plan_tier_terms"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and follows the style guide for plan names.",
+      "evidence": [],
+      "corrected": "Passa al piano Pro",
+      "rules": [
+       "ui_term_glossary/plan_tier_terms"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/cta_buttons",
+         "ui_term_glossary/plan_tier_terms"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h05",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "pricing note",
+     "englishSource": "The Free plan includes 3 projects",
+     "text": "Il piano Gratuito include 3 progetti",
+     "errorType": "house_term"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Il nome del piano deve essere mantenuto in inglese come 'Free' e non tradotto in 'Gratuito'.",
+      "evidence": [
+       "piano Gratuito"
+      ],
+      "corrected": "Il piano Free include 3 progetti",
+      "rules": [
+       "Plan Names, Tiers, and Key Labels"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "Il nome del piano deve essere mantenuto in inglese come 'Free' e non tradotto in 'Gratuito'.",
+      "evidence": [
+       "piano Gratuito"
+      ],
+      "corrected": "Il piano Free include 3 progetti",
+      "rules": [
+       "Plan Names, Tiers, and Key Labels"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/plan_tier_terms"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h05",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "pricing note",
+     "englishSource": "The Free plan includes 3 projects",
+     "text": "Il piano Free include 3 progetti",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text correctly follows the naming convention for the Free plan and uses standard Italian terminology.",
+      "evidence": [],
+      "corrected": "Il piano Free include 3 progetti",
+      "rules": [
+       "ui_term_glossary/plan_tier_terms"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The text correctly follows the naming convention for the Free plan and uses standard Italian terminology.",
+      "evidence": [],
+      "corrected": "Il piano Free include 3 progetti",
+      "rules": [
+       "ui_term_glossary/plan_tier_terms"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/plan_tier_terms",
+         "ui_term_glossary/feature_product_terms"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h06",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "form label",
+     "englishSource": "Enter your email address",
+     "text": "Inserisci il tuo indirizzo e-mail",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, natural, and follows standard Italian UI conventions.",
+      "evidence": [],
+      "corrected": "Inserisci il tuo indirizzo e-mail",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, natural, and follows standard Italian UI conventions.",
+      "evidence": [],
+      "corrected": "Inserisci il tuo indirizzo e-mail",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/feature_product_terms",
+         "calques_and_false_friends/term_glossary"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h06",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "form label",
+     "englishSource": "Enter your email address",
+     "text": "Inserisci il tuo indirizzo email",
+     "errorType": "house_term"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurate for a form label in a SaaS context.",
+      "evidence": [],
+      "corrected": "Inserisci il tuo indirizzo email",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and accurate for a form label in a SaaS context.",
+      "evidence": [],
+      "corrected": "Inserisci il tuo indirizzo email",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/feature_product_terms",
+         "calques_and_false_friends/term_glossary"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h07",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "login page",
+     "englishSource": "Sign in to your account to continue",
+     "text": "Acceda al suo account per continuare",
+     "errorType": "house_voice"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses the formal 'Lei' register, which is forbidden in the UI style guide.",
+      "evidence": [
+       "Acceda",
+       "suo"
+      ],
+      "corrected": "Accedi al tuo account per continuare",
+      "rules": [
+       "tone_and_style/voice_and_register"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "The text uses the formal 'Lei' register, which is forbidden in the UI style guide.",
+      "evidence": [
+       "Acceda",
+       "suo"
+      ],
+      "corrected": "Accedi al tuo account per continuare",
+      "rules": [
+       "tone_and_style/voice_and_register"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "tone_and_style/voice_and_register",
+         "ui_term_glossary/cta_buttons"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h07",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "login page",
+     "englishSource": "Sign in to your account to continue",
+     "text": "Accedi al tuo account per continuare",
+     "errorType": "house_voice"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic, follows the informal 'tu' register, and correctly uses the preferred CTA 'Accedi'.",
+      "evidence": [],
+      "corrected": "Accedi al tuo account per continuare",
+      "rules": [
+       "CTA and Button Translations",
+       "Voice, Tone & Register"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic, follows the informal 'tu' register, and correctly uses the preferred CTA 'Accedi'.",
+      "evidence": [],
+      "corrected": "Accedi al tuo account per continuare",
+      "rules": [
+       "CTA and Button Translations",
+       "Voice, Tone & Register"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/cta_buttons",
+         "tone_and_style/voice_and_register"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h08",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "login help text",
+     "englishSource": "If you forgot your password, reset it here",
+     "text": "Se ha dimenticato la password, la reimposti qui",
+     "errorType": "house_voice"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text uses the formal 'Lei' register, which is explicitly forbidden by the style guide in favor of the informal 'tu'.",
+      "evidence": [
+       "Se ha dimenticato la password, la reimposti qui"
+      ],
+      "corrected": "Se hai dimenticato la password, reimpostala qui",
+      "rules": [
+       "tone_and_style/voice_and_register"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "The text uses the formal 'Lei' register, which is explicitly forbidden by the style guide in favor of the informal 'tu'.",
+      "evidence": [
+       "Se ha dimenticato la password, la reimposti qui"
+      ],
+      "corrected": "Se hai dimenticato la password, reimpostala qui",
+      "rules": [
+       "tone_and_style/voice_and_register"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "tone_and_style/voice_and_register"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h08",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "login help text",
+     "englishSource": "If you forgot your password, reset it here",
+     "text": "Se hai dimenticato la password, reimpostala qui",
+     "errorType": "house_voice"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the informal 'tu' register and follows the established style guide for UI instructions.",
+      "evidence": [],
+      "corrected": "Se hai dimenticato la password, reimpostala qui",
+      "rules": [
+       "Voice, Tone & Register/Address the user as \"tu\", never \"Lei\""
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses the informal 'tu' register and follows the established style guide for UI instructions.",
+      "evidence": [],
+      "corrected": "Se hai dimenticato la password, reimpostala qui",
+      "rules": [
+       "Voice, Tone & Register/Address the user as \"tu\", never \"Lei\""
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "tone_and_style/voice_and_register",
+         "ui_term_glossary/cta_buttons"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h09",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "error toast",
+     "englishSource": "We couldn't save your changes. Try again later.",
+     "text": "Impossibile salvare le modifiche. Riprovare più tardi.",
+     "errorType": "house_phrasing"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The error message uses a forbidden opening pattern and an incorrect infinitive form for the next-step instruction.",
+      "evidence": [
+       "Impossibile",
+       "Riprovare"
+      ],
+      "corrected": "Non siamo riusciti a salvare le modifiche. Riprova più tardi.",
+      "rules": [
+       "tone_and_style/voice_and_register"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "The error message uses a forbidden opening pattern and an incorrect infinitive form for the next-step instruction.",
+      "evidence": [
+       "Impossibile",
+       "Riprovare"
+      ],
+      "corrected": "Non siamo riusciti a salvare le modifiche. Riprova più tardi.",
+      "rules": [
+       "tone_and_style/voice_and_register"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "calques_and_false_friends/rules",
+         "tone_and_style/voice_and_register"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h09",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "error toast",
+     "englishSource": "We couldn't save your changes. Try again later.",
+     "text": "Non siamo riusciti a salvare le modifiche. Riprova più tardi.",
+     "errorType": "house_phrasing"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text follows the required error message structure and informal register.",
+      "evidence": [],
+      "corrected": "Non siamo riusciti a salvare le modifiche. Riprova più tardi.",
+      "rules": [
+       "Voice, Tone & Register/Error message structure"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The text follows the required error message structure and informal register.",
+      "evidence": [],
+      "corrected": "Non siamo riusciti a salvare le modifiche. Riprova più tardi.",
+      "rules": [
+       "Voice, Tone & Register/Error message structure"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "tone_and_style/voice_and_register",
+         "calques_and_false_friends/rules"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h10",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "upload error",
+     "englishSource": "Error: the file is too large",
+     "text": "Errore: il file è troppo grande",
+     "errorType": "house_phrasing"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, grammatically correct, and follows the style guide.",
+      "evidence": [],
+      "corrected": "Errore: il file è troppo grande",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, grammatically correct, and follows the style guide.",
+      "evidence": [],
+      "corrected": "Errore: il file è troppo grande",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "calques_and_false_friends/rules",
+         "calques_and_false_friends/term_glossary",
+         "grammar/agreement/gender_number",
+         "tone_and_style/punctuation"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h10",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "upload error",
+     "englishSource": "Error: the file is too large",
+     "text": "Non siamo riusciti a caricare il file: è troppo grande",
+     "errorType": "house_phrasing"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and follows the punctuation and style guidelines.",
+      "evidence": [],
+      "corrected": "Non siamo riusciti a caricare il file: è troppo grande",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural, grammatically correct, and follows the punctuation and style guidelines.",
+      "evidence": [],
+      "corrected": "Non siamo riusciti a caricare il file: è troppo grande",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "calques_and_false_friends/rules",
+         "tone_and_style/punctuation",
+         "grammar/agreement/gender_number"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h11",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "success toast",
+     "englishSource": "Your project has been created!",
+     "text": "Il tuo progetto è stato creato!",
+     "errorType": "house_punctuation"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, grammatically correct, and follows the informal 'tu' register required for UI copy.",
+      "evidence": [],
+      "corrected": "Il tuo progetto è stato creato!",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is accurate, grammatically correct, and follows the informal 'tu' register required for UI copy.",
+      "evidence": [],
+      "corrected": "Il tuo progetto è stato creato!",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "grammar/agreement/gender_number",
+         "tone_and_style/voice_and_register",
+         "ui_term_glossary/feature_product_terms"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h11",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "success toast",
+     "englishSource": "Your project has been created!",
+     "text": "Il tuo progetto è stato creato.",
+     "errorType": "house_punctuation"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text correctly follows Italian sentence case and punctuation rules, including the removal of the exclamation mark.",
+      "evidence": [],
+      "corrected": "Il tuo progetto è stato creato.",
+      "rules": [
+       "Punctuation Rules"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The text correctly follows Italian sentence case and punctuation rules, including the removal of the exclamation mark.",
+      "evidence": [],
+      "corrected": "Il tuo progetto è stato creato.",
+      "rules": [
+       "Punctuation Rules"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "tone_and_style/punctuation"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h12",
+     "half": "shipped",
+     "product": "online shop builder",
+     "context": "order confirmation",
+     "englishSource": "Payment received, thank you!",
+     "text": "Pagamento ricevuto, grazie!",
+     "errorType": "house_punctuation"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "Exclamation marks are prohibited in product copy and must be replaced with a full stop or removed.",
+      "evidence": [
+       "Pagamento ricevuto, grazie!"
+      ],
+      "corrected": "Pagamento ricevuto, grazie.",
+      "rules": [
+       "tone_and_style/punctuation"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "Exclamation marks are prohibited in product copy and must be replaced with a full stop or removed.",
+      "evidence": [
+       "Pagamento ricevuto, grazie!"
+      ],
+      "corrected": "Pagamento ricevuto, grazie.",
+      "rules": [
+       "tone_and_style/punctuation"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "tone_and_style/punctuation",
+         "tone_and_style/voice_and_register"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h12",
+     "half": "fixed",
+     "product": "online shop builder",
+     "context": "order confirmation",
+     "englishSource": "Payment received, thank you!",
+     "text": "Pagamento ricevuto, grazie.",
+     "errorType": "house_punctuation"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text is grammatically correct and adheres to the style guide regarding punctuation in confirmations.",
+      "evidence": [],
+      "corrected": "Pagamento ricevuto, grazie.",
+      "rules": [
+       "Punctuation Rules/Exclamation marks"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The text is grammatically correct and adheres to the style guide regarding punctuation in confirmations.",
+      "evidence": [],
+      "corrected": "Pagamento ricevuto, grazie.",
+      "rules": [
+       "Punctuation Rules/Exclamation marks"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "tone_and_style/punctuation"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h13",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "button",
+     "englishSource": "Invite a user to the project",
+     "text": "Invita un utente nel progetto",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is grammatically correct and idiomatic for the context of a project-management tool.",
+      "evidence": [],
+      "corrected": "Invita un utente nel progetto",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is grammatically correct and idiomatic for the context of a project-management tool.",
+      "evidence": [],
+      "corrected": "Invita un utente nel progetto",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/cta_buttons",
+         "ui_term_glossary/feature_product_terms"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h13",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "button",
+     "englishSource": "Invite a user to the project",
+     "text": "Invita una persona nel progetto",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and grammatically correct.",
+      "evidence": [],
+      "corrected": "Invita una persona nel progetto",
+      "rules": [
+       "grammar/agreement/gender_number",
+       "ui_term_glossary/cta_buttons"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic and grammatically correct.",
+      "evidence": [],
+      "corrected": "Invita una persona nel progetto",
+      "rules": [
+       "grammar/agreement/gender_number",
+       "ui_term_glossary/cta_buttons"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/cta_buttons",
+         "grammar/agreement/gender_number"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h14",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "analytics card title",
+     "englishSource": "Active users this month",
+     "text": "Gli utenti attivi questo mese",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is natural and grammatically correct for a UI analytics card.",
+      "evidence": [],
+      "corrected": "Gli utenti attivi questo mese",
+      "rules": []
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is natural and grammatically correct for a UI analytics card.",
+      "evidence": [],
+      "corrected": "Gli utenti attivi questo mese",
+      "rules": []
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/feature_product_terms",
+         "grammar/word_order"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h14",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "analytics card title",
+     "englishSource": "Active users this month",
+     "text": "Le persone attive questo mese",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses 'persone' instead of 'utenti' as per the style guide.",
+      "evidence": [],
+      "corrected": "Le persone attive questo mese",
+      "rules": [
+       "Plan Names, Tiers, and Key Labels/User references"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation correctly uses 'persone' instead of 'utenti' as per the style guide.",
+      "evidence": [],
+      "corrected": "Le persone attive questo mese",
+      "rules": [
+       "Plan Names, Tiers, and Key Labels/User references"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "ui_term_glossary/feature_product_terms"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      },
+      {
+       "tool": "knowledge_base_search",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "query": "user"
+       }
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "ui_term_glossary/plan_tier_terms"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h15",
+     "half": "shipped",
+     "product": "online shop builder",
+     "context": "pricing line",
+     "englishSource": "From €29 per month",
+     "text": "Da €29 al mese",
+     "errorType": "house_format"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The euro sign must follow the amount, separated by a non-breaking space.",
+      "evidence": [
+       "€29"
+      ],
+      "corrected": "Da 29 € al mese",
+      "rules": [
+       "Number Separators, Quantities & Currency/Price format: amount first, then € with non-breaking space"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "The euro sign must follow the amount, separated by a non-breaking space.",
+      "evidence": [
+       "€29"
+      ],
+      "corrected": "Da 29 € al mese",
+      "rules": [
+       "Number Separators, Quantities & Currency/Price format: amount first, then € with non-breaking space"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "number_formatting/separators_and_large_numbers",
+         "ui_term_glossary/plan_tier_terms"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h15",
+     "half": "fixed",
+     "product": "online shop builder",
+     "context": "pricing line",
+     "englishSource": "From €29 per month",
+     "text": "Da 29 € al mese",
+     "errorType": "house_format"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The text correctly follows the style guide for price formatting, placing the amount before the euro sign.",
+      "evidence": [],
+      "corrected": "Da 29 € al mese",
+      "rules": [
+       "Number Separators, Quantities & Currency/Price format: amount first, then € with non-breaking space"
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The text correctly follows the style guide for price formatting, placing the amount before the euro sign.",
+      "evidence": [],
+      "corrected": "Da 29 € al mese",
+      "rules": [
+       "Number Separators, Quantities & Currency/Price format: amount first, then € with non-breaking space"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "number_formatting/separators_and_large_numbers"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h16",
+     "half": "shipped",
+     "product": "project-management SaaS",
+     "context": "offline banner",
+     "englishSource": "Please check your connection",
+     "text": "Per favore, controlla la tua connessione",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "error",
+    "detail": {
+     "review": {
+      "verdict": "error",
+      "reason": "The text includes 'Per favore', which is explicitly forbidden in UI instructions according to the style guide.",
+      "evidence": [
+       "Per favore, "
+      ],
+      "corrected": "Controlla la tua connessione",
+      "rules": [
+       "tone_and_style/voice_and_register"
+      ]
+     },
+     "raw": {
+      "verdict": "error",
+      "reason": "The text includes 'Per favore', which is explicitly forbidden in UI instructions according to the style guide.",
+      "evidence": [
+       "Per favore, "
+      ],
+      "corrected": "Controlla la tua connessione",
+      "rules": [
+       "tone_and_style/voice_and_register"
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "knowledgeBase": "kbmkQE8rDZi0",
+        "paths": [
+         "tone_and_style/voice_and_register",
+         "calques_and_false_friends/rules"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "item": {
+     "caseId": "h16",
+     "half": "fixed",
+     "product": "project-management SaaS",
+     "context": "offline banner",
+     "englishSource": "Please check your connection",
+     "text": "Controlla la tua connessione",
+     "errorType": "house_banned_word"
+    },
+    "verdict": "ok",
+    "detail": {
+     "review": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic, follows the informal 'tu' register, and correctly uses the imperative form as per the style guide.",
+      "evidence": [],
+      "corrected": "Controlla la tua connessione",
+      "rules": [
+       "Voice, Tone & Register/Address the user as \"tu\", never \"Lei\""
+      ]
+     },
+     "raw": {
+      "verdict": "ok",
+      "reason": "The translation is idiomatic, follows the informal 'tu' register, and correctly uses the imperative form as per the style guide.",
+      "evidence": [],
+      "corrected": "Controlla la tua connessione",
+      "rules": [
+       "Voice, Tone & Register/Address the user as \"tu\", never \"Lei\""
+      ]
+     },
+     "toolCalls": [
+      {
+       "tool": "initial_context",
+       "input": {}
+      },
+      {
+       "tool": "knowledge_base_read",
+       "input": {
+        "paths": [
+         "tone_and_style/voice_and_register",
+         "ui_term_glossary/cta_buttons"
+        ],
+        "knowledgeBase": "kbmkQE8rDZi0"
+       }
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -10,7 +10,7 @@ export const l10nRule = defineType({
     defineField({
       name: "category", type: "string", validation: (r) => r.required(),
       options: { list: ["calque", "untranslated", "number_format", "capitalization", "agreement",
-        "wrong_word_sense", "misspelling", "encoding", "ungrammatical", "consistency"] },
+        "wrong_word_sense", "misspelling", "encoding", "ungrammatical", "consistency", "house_style"] },
     }),
     defineField({ name: "severity", type: "string", options: { list: ["critical", "major", "minor"] } }),
     defineField({ name: "rule", title: "Rule", type: "text", rows: 4, validation: (r) => r.required() }),

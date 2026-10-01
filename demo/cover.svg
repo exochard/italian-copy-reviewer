@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="Inter, 'Noto Sans', 'DejaVu Sans', sans-serif">
+  <rect width="1000" height="420" fill="#0f1720"/>
+  <rect x="0" y="0" width="12" height="420" fill="#f3524f"/>
+  <text x="56" y="92" font-size="20" font-weight="600" fill="#f3524f" letter-spacing="2">SANITY KNOWLEDGE BASE  ·  AGENT</text>
+  <text x="56" y="150" font-size="40" font-weight="700" fill="#ffffff">Un revisore di copy</text>
+  <text x="56" y="198" font-size="40" font-weight="700" fill="#ffffff">che cita la guida</text>
+  <text x="56" y="246" font-size="40" font-weight="700" fill="#ffffff">di stile che ha letto</text>
+  <text x="56" y="300" font-size="22" fill="#9fb0c3">An Italian copy reviewer that cites</text>
+  <text x="56" y="330" font-size="22" fill="#9fb0c3">the style guide it read.</text>
+  <text x="56" y="376" font-size="18" fill="#6c7f94">gemini-3.1-flash-lite  ·  Sanity Context MCP  ·  3ezm3tm1</text>
+  <rect x="540" y="60" width="430" height="300" rx="14" fill="#18222e" stroke="#2b3a4a" stroke-width="2"/>
+  <text x="570" y="112" font-size="15" font-weight="600" fill="#6c7f94" letter-spacing="1.5">LOGIN PAGE  ·  SHIPPED</text>
+  <text x="570" y="152" font-size="20" fill="#ffffff">
+    <tspan fill="#ff8a87" text-decoration="line-through">Acceda al suo account</tspan>
+    <tspan> per continuare</tspan>
+  </text>
+  <rect x="570" y="176" width="370" height="2" fill="#2b3a4a"/>
+  <rect x="570" y="196" width="78" height="26" rx="13" fill="#f3524f"/>
+  <text x="609" y="214" font-size="14" font-weight="700" fill="#0f1720" text-anchor="middle">ERRORE</text>
+  <text x="570" y="254" font-size="17" fill="#cdd8e3">Regola della casa: sempre «tu»,</text>
+  <text x="570" y="278" font-size="17" fill="#cdd8e3">mai «Lei».</text>
+  <text x="570" y="312" font-size="14" fill="#6c7f94">cita: l10nRule / house-informal-tu</text>
+  <text x="570" y="344" font-size="18" font-weight="600" fill="#7ddc9a">Accedi al tuo account per continuare</text>
+</svg>

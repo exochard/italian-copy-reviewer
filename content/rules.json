@@ -267,5 +267,101 @@
   ],
   "avoid": [],
   "cases": []
+ },
+ {
+  "slug": "house-informal-tu",
+  "title": "House voice: always \"tu\", never \"Lei\"",
+  "category": "house_style",
+  "severity": "major",
+  "rule": "Our product speaks to people in the informal second person singular: \"tu\" and the imperative \"-i\" forms (\"Accedi\", \"Inserisci\", \"Reimposta\"), with \"tuo/tua\" for possessives. The formal \"Lei\" (\"Acceda\", \"il suo account\") is correct Italian in general but is not our voice, and it must not appear in UI copy.",
+  "prefer": [
+   "Accedi al tuo account",
+   "Se hai dimenticato"
+  ],
+  "avoid": [
+   "Acceda",
+   "il suo account",
+   "Se ha dimenticato"
+  ],
+  "cases": []
+ },
+ {
+  "slug": "house-error-opening",
+  "title": "Error messages open with \"Non siamo riusciti a\"",
+  "category": "house_style",
+  "severity": "major",
+  "rule": "Every error or failure message states what went wrong in the first person plural, opening with \"Non siamo riusciti a\" plus the infinitive, and any next step is an imperative (\"Riprova più tardi\"). Do not open with \"Errore:\" or \"Impossibile\", and do not use the infinitive for the next step (\"Riprovare\").",
+  "prefer": [
+   "Non siamo riusciti a salvare",
+   "Riprova più tardi"
+  ],
+  "avoid": [
+   "Errore:",
+   "Impossibile",
+   "Riprovare"
+  ],
+  "cases": []
+ },
+ {
+  "slug": "house-no-exclamation",
+  "title": "No exclamation marks in product copy",
+  "category": "house_style",
+  "severity": "major",
+  "rule": "Toasts, confirmations, empty states and headings end with a full stop or with no punctuation. Exclamation marks are banned in product copy; they are allowed only in marketing emails.",
+  "prefer": [
+   "Il file è stato importato."
+  ],
+  "avoid": [
+   "!"
+  ],
+  "cases": []
+ },
+ {
+  "slug": "house-no-utente",
+  "title": "Say \"persona\" or \"cliente\", never \"utente\"",
+  "category": "house_style",
+  "severity": "major",
+  "rule": "We never call the people who use the product \"utente\" or \"utenti\". Use \"persona\" and \"persone\" for people in a workspace, \"cliente\" and \"clienti\" for people who pay.",
+  "prefer": [
+   "persona",
+   "persone",
+   "cliente"
+  ],
+  "avoid": [
+   "utente",
+   "utenti"
+  ],
+  "cases": []
+ },
+ {
+  "slug": "house-no-per-favore",
+  "title": "No \"per favore\" in instructions",
+  "category": "house_style",
+  "severity": "minor",
+  "rule": "Instructions and prompts are a plain imperative with no softener: \"Controlla la connessione\", not \"Per favore, controlla la connessione\". Politeness words (\"per favore\", \"gentilmente\", \"cortesemente\") are banned in UI copy.",
+  "prefer": [
+   "Controlla la connessione"
+  ],
+  "avoid": [
+   "Per favore",
+   "gentilmente",
+   "cortesemente"
+  ],
+  "cases": []
+ },
+ {
+  "slug": "house-euro-after",
+  "title": "Euro sign after the amount",
+  "category": "house_style",
+  "severity": "minor",
+  "rule": "Prices are written with the amount first, a non-breaking space and the euro sign: \"29 €\". The sign never precedes the number (\"€29\", \"€ 29\").",
+  "prefer": [
+   "29 € al mese"
+  ],
+  "avoid": [
+   "€29",
+   "€ 29"
+  ],
+  "cases": []
  }
 ]

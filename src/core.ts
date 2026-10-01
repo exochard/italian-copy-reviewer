@@ -1,6 +1,6 @@
 // Pure logic: endpoint URL, prompts, output schema and scoring. No network here.
 import { existsSync, readFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 import { z } from "zod";
 
 export const Review = z.object({
@@ -104,10 +104,17 @@ export function casesPath(root: string): string {
   return existsSync(vendored) ? vendored : join(root, "..", "it-l10n-bench", "cases.jsonl");
 }
 
-export function loadItems(casesPath: string, splitPath: string, only: "train" | "test" | "all"): Item[] {
+export type Slice = "train" | "test" | "house" | "all";
+
+export function loadItems(casesPath: string, splitPath: string, only: Slice): Item[] {
   const split: Record<string, string> = JSON.parse(readFileSync(splitPath, "utf8"));
   const items: Item[] = [];
-  for (const line of readFileSync(casesPath, "utf8").split("\n")) {
+  // The house slice lives beside the split: pairs whose verdict depends on rules that exist
+  // only in the Knowledge Base. It never enters the benchmark file or the KB examples.
+  const housePath = join(dirname(splitPath), "house.jsonl");
+  const lines = readFileSync(casesPath, "utf8").split("\n");
+  if (existsSync(housePath)) lines.push(...readFileSync(housePath, "utf8").split("\n"));
+  for (const line of lines) {
     if (!line.trim()) continue;
     const c = JSON.parse(line);
     if (only !== "all" && split[c.id] !== only) continue;

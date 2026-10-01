@@ -31,13 +31,13 @@ def build() -> list[dict]:
             for cid in rule["cases"] if split.get(cid) == "train"
         ]
         docs.append({
-            "_id": f"rule.{rule['slug']}", "_type": "l10nRule", "title": rule["title"],
+            "_id": f"rule-{rule['slug']}", "_type": "l10nRule", "title": rule["title"],
             "slug": {"_type": "slug", "current": rule["slug"]}, "category": rule["category"],
             "severity": rule["severity"], "rule": rule["rule"], "prefer": rule["prefer"],
             "avoid": rule["avoid"], "examples": examples,
         })
     for term in json.loads((HERE / "glossary.json").read_text(encoding="utf-8")):
-        docs.append({"_id": f"term.{slugify(term['english'])}", "_type": "glossaryTerm", **term})
+        docs.append({"_id": f"term-{slugify(term['english'])}", "_type": "glossaryTerm", **term})
     return docs
 
 
